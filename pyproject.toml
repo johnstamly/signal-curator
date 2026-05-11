@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "signal-curator"
-version = "0.1.0"
+version = "0.1.1"
 description = "Human-in-the-loop active learning labeling app for 1D signal datasets — built for guided-wave SHM with operator self-correction."
 readme = "README.md"
 license = { file = "LICENSE" }

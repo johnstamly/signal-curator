@@ -1,7 +1,7 @@
 """signal-curator: human-in-the-loop active learning labeling app for 1D signal datasets."""
 from __future__ import annotations
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from signal_curator.config import Config
 from signal_curator.dataset import DatasetAdapter, GenericAdapter, make_adapter

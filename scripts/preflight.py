@@ -112,7 +112,7 @@ def check_required_files() -> bool:
 def check_imports() -> bool:
     sys.path.insert(0, str(REPO_ROOT / "src"))
     import signal_curator  # noqa: F401
-    assert signal_curator.__version__ == "0.1.0"
+    assert signal_curator.__version__ == "0.1.1"
     return True
 
 
@@ -141,7 +141,7 @@ def check_cli_version() -> bool:
         print(result.stdout)
         print(result.stderr)
         raise RuntimeError(f"CLI exit code {result.returncode}")
-    if "signal-curator 0.1.0" not in result.stdout:
+    if "signal-curator 0.1.1" not in result.stdout:
         raise RuntimeError(f"unexpected --version output: {result.stdout!r}")
     return True
 
