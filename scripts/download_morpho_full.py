@@ -4,7 +4,9 @@ This is Tier 3 in the dataset hierarchy (see README): the full universe needed
 to run the complete active-learning convergence experiments. Tier 1 (synthetic
 demo) and Tier 2 (1,011-signal labelled subset) are bundled in the repo.
 
-The full file is ~93 MB. Hosted at Zenodo, DOI: 10.5281/zenodo.20120069.
+The full file is ~93 MB. Hosted at Zenodo:
+  - Concept DOI (cite this):  10.5281/zenodo.20120069
+  - Version DOI (v1.0.0):     10.5281/zenodo.20120070
 """
 from __future__ import annotations
 import hashlib
@@ -12,7 +14,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-ZENODO_URL = "https://zenodo.org/records/20120069/files/morpho_50khz_full.h5"
+ZENODO_URL = "https://zenodo.org/records/20120070/files/morpho_50khz_full.h5"
 EXPECTED_SHA256 = "436e22d836e1b4f11322c45995a64ac1de71718a817ce9dfb75c88c27ea7e3e0"
 OUT_PATH = Path("data/morpho_50khz_full/signals.h5")
 
