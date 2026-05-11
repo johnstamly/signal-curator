@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signal-curator"
+version = "0.1.0"
+description = "Human-in-the-loop active learning labeling app for 1D signal datasets — built for guided-wave SHM with operator self-correction."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Giannis Stamatelatos", email = "johnstamly@gmail.com" },
+]
+keywords = [
+    "active learning",
+    "human-in-the-loop",
+    "structural health monitoring",
+    "guided waves",
+    "signal curation",
+    "data labeling",
+    "deep learning",
+    "ultrasonic",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.28",
+    "torch>=2.0",
+    "numpy>=1.24",
+    "h5py>=3.8",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+signal-curator = "signal_curator.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/johnstamly/signal-curator"
+Repository = "https://github.com/johnstamly/signal-curator"
+Issues = "https://github.com/johnstamly/signal-curator/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

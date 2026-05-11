@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Large data files — full MORPHO dataset is fetched from Zenodo, not committed
+data/morpho_50khz_full/
+*.h5.tmp
+
+# User-generated labelling state — fresh DB per user
+shared_labels.db
+*.db-journal
+model_*_weights.pt
+exports/
