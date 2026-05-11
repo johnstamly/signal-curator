@@ -12,10 +12,7 @@ learning loop: a lightweight 1D CNN scores all signals, surfaces ambiguous
 queries to the operator, and pairs them with **FP/FN re-inspection** of past
 decisions — so the operator can correct their own labelling mistakes as the
 model learns. The pipeline was developed for guided-wave structural health
-monitoring (SHM) campaigns and accompanies the paper:
-
-> *Active deep learning with operator self-correction for guided-wave SHM
-> dataset curation* — Stamatelatos et al., *Measurement* (2026).
+monitoring (SHM) campaigns.
 
 ## Why use this
 
@@ -86,17 +83,6 @@ exclusion, frequency-stratified labels), see
 [`docs/MORPHO_NOTES.md`](docs/MORPHO_NOTES.md).
 
 ## Citation
-
-If `signal-curator` helps your research, please cite the accompanying paper
-**and** the code:
-
-```bibtex
-@article{stamatelatos2026curation,
-  title   = {Active deep learning with operator self-correction for guided-wave SHM dataset curation},
-  author  = {Stamatelatos, Giannis and Dimitriou, Dimitris K. and Loutas, Theodoros},
-  journal = {Measurement},
-  year    = {2026},
-}
 
 @software{stamatelatos2026signal_curator,
   title   = {signal-curator: human-in-the-loop active learning for 1D signal datasets},
