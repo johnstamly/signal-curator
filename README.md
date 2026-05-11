@@ -5,6 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20119847.svg)](https://doi.org/10.5281/zenodo.20119847)
 
 `signal-curator` is a Streamlit-based labelling tool with a tight active
 learning loop: a lightweight 1D CNN scores all signals, surfaces ambiguous
@@ -100,7 +101,7 @@ If `signal-curator` helps your research, please cite the accompanying paper
   title   = {signal-curator: human-in-the-loop active learning for 1D signal datasets},
   author  = {Stamatelatos, Giannis},
   year    = {2026},
-  doi     = {TBD},
+  doi     = {10.5281/zenodo.20119847},
   url     = {https://github.com/johnstamly/signal-curator},
 }
 ```
