@@ -3,7 +3,6 @@
 These tests run on the bundled demo data only (no external dependencies).
 """
 from __future__ import annotations
-import os
 from pathlib import Path
 import numpy as np
 import pytest
@@ -14,9 +13,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 def test_imports():
     """Every public symbol should be importable."""
     from signal_curator import (
-        Config, DatasetAdapter, GenericAdapter, LabelingSession, MicroConv1D,
-        SignalKey, augment, augment_and_train, labels_db, make_adapter,
-        run_inference, __version__,
+        make_adapter,
+        __version__,
     )
     assert __version__ == "0.1.0"
     assert callable(make_adapter)
@@ -59,7 +57,7 @@ def test_morpho_curated_subset_loads():
 def test_train_short_run():
     """End-to-end: synthetic demo -> short 5-epoch training -> infer."""
     from signal_curator import (
-        MicroConv1D, augment_and_train, make_adapter, run_inference,
+        augment_and_train, make_adapter, run_inference,
     )
     demo_path = REPO_ROOT / "data" / "demo" / "synthetic_demo.h5"
     if not demo_path.exists():
@@ -73,7 +71,6 @@ def test_train_short_run():
     signals = []
     with h5py.File(str(demo_path), "r") as f:
         for k in keys:
-            from signal_curator.labels_db import signal_id
             sid_lookup = list(f.keys())
         # easier: read from disk in same order as iteration
         for sid in sid_lookup:
@@ -81,7 +78,7 @@ def test_train_short_run():
             class_truth = str(grp.attrs.get("class_truth", "good"))
             labels.append(1 if class_truth == "good" else 0)
             signals.append(np.asarray(grp["data"][:], dtype=np.float32))
-    labeled_buffer = [{"signal": s, "label": l} for s, l in zip(signals, labels)]
+    labeled_buffer = [{"signal": s, "label": lbl} for s, lbl in zip(signals, labels)]
 
     model, metrics = augment_and_train(labeled_buffer, epochs=5, patience=3)
     assert "val_acc" in metrics

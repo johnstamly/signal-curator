@@ -46,9 +46,11 @@ def main():
     w_start, w_end = (int(x) for x in args.window.split(","))
 
     if not paper_db.exists():
-        print(f"Paper DB not found: {paper_db}", file=sys.stderr); sys.exit(2)
+        print(f"Paper DB not found: {paper_db}", file=sys.stderr)
+        sys.exit(2)
     if not paper_h5.exists():
-        print(f"Paper HDF5 not found: {paper_h5}", file=sys.stderr); sys.exit(2)
+        print(f"Paper HDF5 not found: {paper_h5}", file=sys.stderr)
+        sys.exit(2)
 
     conn = sqlite3.connect(str(paper_db))
     rows = conn.execute(

@@ -11,7 +11,6 @@ Configuration is read from environment variables; see config.py for the full
 list. Sensible defaults work out-of-the-box when launched via the CLI.
 """
 from __future__ import annotations
-import os
 import random
 
 import matplotlib.pyplot as plt
@@ -299,8 +298,6 @@ def _render_validation() -> None:
     vr = st.session_state.get("validation_results")
     if vr is None:
         return
-    freq = vr["freq"]
-    signals_arr = vr["signals_arr"]
     true_labels = vr["true_labels"]
     probs_labeled = vr["probs_labeled"]
     tp, tn, fp, fn, acc = vr["tp"], vr["tn"], vr["fp"], vr["fn"], vr["acc"]
@@ -311,7 +308,6 @@ def _render_validation() -> None:
     epochs_ran = vr.get("epochs_ran", len(train_losses))
     early_stopped = vr.get("early_stopped", False)
     final_lr = vr.get("final_lr", 0.0)
-    meta = vr["meta"]
 
     stop_msg = f"Early stopped at epoch {epochs_ran}" if early_stopped \
         else f"Ran all {epochs_ran} epochs"

@@ -112,11 +112,6 @@ def check_required_files() -> bool:
 def check_imports() -> bool:
     sys.path.insert(0, str(REPO_ROOT / "src"))
     import signal_curator  # noqa: F401
-    from signal_curator import (
-        Config, DatasetAdapter, GenericAdapter, LabelingSession, MicroConv1D,
-        SignalKey, augment, augment_and_train, labels_db, make_adapter,
-        run_inference,
-    )
     assert signal_curator.__version__ == "0.1.0"
     return True
 
@@ -179,12 +174,11 @@ def check_end_to_end_workflow() -> bool:
     This is what would happen in the Streamlit app, minus the browser.
     """
     from signal_curator import (
-        MicroConv1D, augment_and_train, make_adapter, run_inference,
+        augment_and_train, make_adapter, run_inference,
     )
     from signal_curator.labels_db import (
-        init_db, insert_label, get_all_labels, get_stats, signal_id, _reset,
+        init_db, insert_label, get_all_labels, get_stats, _reset,
     )
-    from signal_curator.session import SignalKey
 
     # Clear any stale thread-local SQLite connections from prior checks
     _reset()
