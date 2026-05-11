@@ -57,8 +57,9 @@ signal-curator demo --dataset morpho_50khz_curated
 # inside the app: switch frequency to 50 kHz, click "Train & Filter Dataset"
 ```
 
-The **full 12,504-signal MORPHO 50 kHz universe** (~100 MB) is archived at
-Zenodo (DOI: TBD upon release). Download it with:
+The **full 12,504-signal MORPHO 50 kHz universe** (~93 MB) is archived at
+Zenodo, DOI [10.5281/zenodo.20120069](https://doi.org/10.5281/zenodo.20120069).
+Download it with:
 
 ```bash
 python scripts/download_morpho_full.py
