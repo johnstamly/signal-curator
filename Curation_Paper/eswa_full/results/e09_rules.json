@@ -1,0 +1,1139 @@
+{
+  "n_shared": 746,
+  "n_shared_bad": 62,
+  "n_shared_good": 684,
+  "features": [
+    "E_pp",
+    "abs_skew",
+    "f5"
+  ],
+  "filters": {
+    "tight": {
+      "thresholds": {
+        "E_pp_below": 0.001,
+        "abs_skew_above": 3.0,
+        "f5_below": 0.1
+      },
+      "n": 746,
+      "n_bad": 62,
+      "n_good": 684,
+      "n_bad_flagged": 7,
+      "n_good_flagged": 0,
+      "bad_recall": 0.11290322580645161,
+      "good_kept": 1.0
+    },
+    "medium": {
+      "thresholds": {
+        "E_pp_below": 0.005,
+        "abs_skew_above": 2.5,
+        "f5_below": 0.15
+      },
+      "n": 746,
+      "n_bad": 62,
+      "n_good": 684,
+      "n_bad_flagged": 11,
+      "n_good_flagged": 0,
+      "bad_recall": 0.1774193548387097,
+      "good_kept": 1.0
+    },
+    "loose": {
+      "thresholds": {
+        "E_pp_below": 0.01,
+        "abs_skew_above": 2.0,
+        "f5_below": 0.2
+      },
+      "n": 746,
+      "n_bad": 62,
+      "n_good": 684,
+      "n_bad_flagged": 17,
+      "n_good_flagged": 16,
+      "bad_recall": 0.27419354838709675,
+      "good_kept": 0.9766081871345029
+    }
+  },
+  "sanity_al_pool": {
+    "n": 1011,
+    "n_bad": 136,
+    "settings": {
+      "tight": {
+        "n": 1011,
+        "n_bad": 136,
+        "n_good": 875,
+        "n_bad_flagged": 11,
+        "n_good_flagged": 0,
+        "bad_recall": 0.08088235294117647,
+        "good_kept": 1.0
+      },
+      "medium": {
+        "n": 1011,
+        "n_bad": 136,
+        "n_good": 875,
+        "n_bad_flagged": 19,
+        "n_good_flagged": 0,
+        "bad_recall": 0.13970588235294118,
+        "good_kept": 1.0
+      },
+      "loose": {
+        "n": 1011,
+        "n_bad": 136,
+        "n_good": 875,
+        "n_bad_flagged": 33,
+        "n_good_flagged": 34,
+        "bad_recall": 0.2426470588235294,
+        "good_kept": 0.9611428571428572
+      }
+    }
+  },
+  "tree": {
+    "max_depth": 3,
+    "class_weight": "balanced",
+    "random_state": 0,
+    "split_seed": 0,
+    "deterministic_no_seed_axis": true,
+    "pooled": {
+      "n": 746,
+      "n_bad": 62,
+      "n_good": 684,
+      "n_bad_flagged": 44,
+      "n_good_flagged": 156,
+      "bad_recall": 0.7096774193548387,
+      "good_kept": 0.7719298245614035
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "n_train": 732,
+        "n_test": 150,
+        "n": 150,
+        "n_bad": 13,
+        "n_good": 137,
+        "n_bad_flagged": 12,
+        "n_good_flagged": 39,
+        "bad_recall": 0.9230769230769231,
+        "good_kept": 0.7153284671532847,
+        "rules": "|--- f5 <= 0.420093\n|   |--- E_pp <= 0.140418\n|   |   |--- f5 <= 0.303697\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.303697\n|   |   |   |--- class: 0\n|   |--- E_pp >  0.140418\n|   |   |--- abs_skew <= 0.691942\n|   |   |   |--- class: 1\n|   |   |--- abs_skew >  0.691942\n|   |   |   |--- class: 0\n|--- f5 >  0.420093\n|   |--- E_pp <= 0.195690\n|   |   |--- f5 <= 0.713201\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.713201\n|   |   |   |--- class: 1\n|   |--- E_pp >  0.195690\n|   |   |--- E_pp <= 0.333416\n|   |   |   |--- class: 1\n|   |   |--- E_pp >  0.333416\n|   |   |   |--- class: 1\n",
+        "nodes": [
+          {
+            "node": 0,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.42009337246418,
+            "left": 1,
+            "right": 8,
+            "n_samples": 732,
+            "class": "GOOD"
+          },
+          {
+            "node": 1,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.14041820168495178,
+            "left": 2,
+            "right": 5,
+            "n_samples": 189,
+            "class": "BAD"
+          },
+          {
+            "node": 2,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.30369745194911957,
+            "left": 3,
+            "right": 4,
+            "n_samples": 99,
+            "class": "BAD"
+          },
+          {
+            "node": 3,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 21,
+            "class": "BAD"
+          },
+          {
+            "node": 4,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 78,
+            "class": "BAD"
+          },
+          {
+            "node": 5,
+            "leaf": false,
+            "feature": "abs_skew",
+            "threshold": 0.6919421553611755,
+            "left": 6,
+            "right": 7,
+            "n_samples": 90,
+            "class": "BAD"
+          },
+          {
+            "node": 6,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 64,
+            "class": "GOOD"
+          },
+          {
+            "node": 7,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 26,
+            "class": "BAD"
+          },
+          {
+            "node": 8,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.1956896334886551,
+            "left": 9,
+            "right": 12,
+            "n_samples": 543,
+            "class": "GOOD"
+          },
+          {
+            "node": 9,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.7132005989551544,
+            "left": 10,
+            "right": 11,
+            "n_samples": 371,
+            "class": "GOOD"
+          },
+          {
+            "node": 10,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 205,
+            "class": "BAD"
+          },
+          {
+            "node": 11,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 166,
+            "class": "GOOD"
+          },
+          {
+            "node": 12,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.3334161639213562,
+            "left": 13,
+            "right": 14,
+            "n_samples": 172,
+            "class": "GOOD"
+          },
+          {
+            "node": 13,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 77,
+            "class": "GOOD"
+          },
+          {
+            "node": 14,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 95,
+            "class": "GOOD"
+          }
+        ]
+      },
+      {
+        "fold": 1,
+        "n_train": 733,
+        "n_test": 149,
+        "n": 149,
+        "n_bad": 13,
+        "n_good": 136,
+        "n_bad_flagged": 7,
+        "n_good_flagged": 24,
+        "bad_recall": 0.5384615384615384,
+        "good_kept": 0.8235294117647058,
+        "rules": "|--- f5 <= 0.453107\n|   |--- E_pp <= 0.190671\n|   |   |--- f5 <= 0.303697\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.303697\n|   |   |   |--- class: 0\n|   |--- E_pp >  0.190671\n|   |   |--- abs_skew <= 1.486472\n|   |   |   |--- class: 1\n|   |   |--- abs_skew >  1.486472\n|   |   |   |--- class: 0\n|--- f5 >  0.453107\n|   |--- E_pp <= 0.081430\n|   |   |--- f5 <= 0.715008\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.715008\n|   |   |   |--- class: 1\n|   |--- E_pp >  0.081430\n|   |   |--- f5 <= 0.632398\n|   |   |   |--- class: 1\n|   |   |--- f5 >  0.632398\n|   |   |   |--- class: 1\n",
+        "nodes": [
+          {
+            "node": 0,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.4531072974205017,
+            "left": 1,
+            "right": 8,
+            "n_samples": 733,
+            "class": "BAD"
+          },
+          {
+            "node": 1,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.19067083299160004,
+            "left": 2,
+            "right": 5,
+            "n_samples": 230,
+            "class": "BAD"
+          },
+          {
+            "node": 2,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.30369745194911957,
+            "left": 3,
+            "right": 4,
+            "n_samples": 137,
+            "class": "BAD"
+          },
+          {
+            "node": 3,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 22,
+            "class": "BAD"
+          },
+          {
+            "node": 4,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 115,
+            "class": "BAD"
+          },
+          {
+            "node": 5,
+            "leaf": false,
+            "feature": "abs_skew",
+            "threshold": 1.4864723682403564,
+            "left": 6,
+            "right": 7,
+            "n_samples": 93,
+            "class": "GOOD"
+          },
+          {
+            "node": 6,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 89,
+            "class": "GOOD"
+          },
+          {
+            "node": 7,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 4,
+            "class": "BAD"
+          },
+          {
+            "node": 8,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.08142973110079765,
+            "left": 9,
+            "right": 12,
+            "n_samples": 503,
+            "class": "GOOD"
+          },
+          {
+            "node": 9,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.7150080502033234,
+            "left": 10,
+            "right": 11,
+            "n_samples": 199,
+            "class": "GOOD"
+          },
+          {
+            "node": 10,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 113,
+            "class": "BAD"
+          },
+          {
+            "node": 11,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 86,
+            "class": "GOOD"
+          },
+          {
+            "node": 12,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.6323983669281006,
+            "left": 13,
+            "right": 14,
+            "n_samples": 304,
+            "class": "GOOD"
+          },
+          {
+            "node": 13,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 136,
+            "class": "GOOD"
+          },
+          {
+            "node": 14,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 168,
+            "class": "GOOD"
+          }
+        ]
+      },
+      {
+        "fold": 2,
+        "n_train": 732,
+        "n_test": 149,
+        "n": 149,
+        "n_bad": 12,
+        "n_good": 137,
+        "n_bad_flagged": 10,
+        "n_good_flagged": 28,
+        "bad_recall": 0.8333333333333334,
+        "good_kept": 0.7956204379562044,
+        "rules": "|--- f5 <= 0.517579\n|   |--- E_pp <= 0.210857\n|   |   |--- f5 <= 0.330402\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.330402\n|   |   |   |--- class: 0\n|   |--- E_pp >  0.210857\n|   |   |--- E_pp <= 0.271595\n|   |   |   |--- class: 1\n|   |   |--- E_pp >  0.271595\n|   |   |   |--- class: 1\n|--- f5 >  0.517579\n|   |--- E_pp <= 0.081430\n|   |   |--- f5 <= 0.662494\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.662494\n|   |   |   |--- class: 1\n|   |--- E_pp >  0.081430\n|   |   |--- f5 <= 0.692046\n|   |   |   |--- class: 1\n|   |   |--- f5 >  0.692046\n|   |   |   |--- class: 1\n",
+        "nodes": [
+          {
+            "node": 0,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.5175789594650269,
+            "left": 1,
+            "right": 8,
+            "n_samples": 732,
+            "class": "GOOD"
+          },
+          {
+            "node": 1,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.2108573392033577,
+            "left": 2,
+            "right": 5,
+            "n_samples": 285,
+            "class": "BAD"
+          },
+          {
+            "node": 2,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.33040182292461395,
+            "left": 3,
+            "right": 4,
+            "n_samples": 171,
+            "class": "BAD"
+          },
+          {
+            "node": 3,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 35,
+            "class": "BAD"
+          },
+          {
+            "node": 4,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 136,
+            "class": "BAD"
+          },
+          {
+            "node": 5,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.27159537374973297,
+            "left": 6,
+            "right": 7,
+            "n_samples": 114,
+            "class": "GOOD"
+          },
+          {
+            "node": 6,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 29,
+            "class": "GOOD"
+          },
+          {
+            "node": 7,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 85,
+            "class": "GOOD"
+          },
+          {
+            "node": 8,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.08142973110079765,
+            "left": 9,
+            "right": 12,
+            "n_samples": 447,
+            "class": "GOOD"
+          },
+          {
+            "node": 9,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.6624937951564789,
+            "left": 10,
+            "right": 11,
+            "n_samples": 192,
+            "class": "GOOD"
+          },
+          {
+            "node": 10,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 60,
+            "class": "BAD"
+          },
+          {
+            "node": 11,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 132,
+            "class": "GOOD"
+          },
+          {
+            "node": 12,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.6920464634895325,
+            "left": 13,
+            "right": 14,
+            "n_samples": 255,
+            "class": "GOOD"
+          },
+          {
+            "node": 13,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 164,
+            "class": "GOOD"
+          },
+          {
+            "node": 14,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 91,
+            "class": "GOOD"
+          }
+        ]
+      },
+      {
+        "fold": 3,
+        "n_train": 732,
+        "n_test": 149,
+        "n": 149,
+        "n_bad": 12,
+        "n_good": 137,
+        "n_bad_flagged": 7,
+        "n_good_flagged": 27,
+        "bad_recall": 0.5833333333333334,
+        "good_kept": 0.8029197080291971,
+        "rules": "|--- f5 <= 0.517579\n|   |--- E_pp <= 0.190671\n|   |   |--- f5 <= 0.330402\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.330402\n|   |   |   |--- class: 0\n|   |--- E_pp >  0.190671\n|   |   |--- abs_skew <= 0.701737\n|   |   |   |--- class: 1\n|   |   |--- abs_skew >  0.701737\n|   |   |   |--- class: 0\n|--- f5 >  0.517579\n|   |--- E_pp <= 0.081430\n|   |   |--- f5 <= 0.662494\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.662494\n|   |   |   |--- class: 1\n|   |--- E_pp >  0.081430\n|   |   |--- E_pp <= 0.190636\n|   |   |   |--- class: 1\n|   |   |--- E_pp >  0.190636\n|   |   |   |--- class: 1\n",
+        "nodes": [
+          {
+            "node": 0,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.5175789594650269,
+            "left": 1,
+            "right": 8,
+            "n_samples": 732,
+            "class": "GOOD"
+          },
+          {
+            "node": 1,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.19067083299160004,
+            "left": 2,
+            "right": 5,
+            "n_samples": 293,
+            "class": "BAD"
+          },
+          {
+            "node": 2,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.33040182292461395,
+            "left": 3,
+            "right": 4,
+            "n_samples": 163,
+            "class": "BAD"
+          },
+          {
+            "node": 3,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 40,
+            "class": "BAD"
+          },
+          {
+            "node": 4,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 123,
+            "class": "BAD"
+          },
+          {
+            "node": 5,
+            "leaf": false,
+            "feature": "abs_skew",
+            "threshold": 0.7017366886138916,
+            "left": 6,
+            "right": 7,
+            "n_samples": 130,
+            "class": "GOOD"
+          },
+          {
+            "node": 6,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 102,
+            "class": "GOOD"
+          },
+          {
+            "node": 7,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 28,
+            "class": "BAD"
+          },
+          {
+            "node": 8,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.08142973110079765,
+            "left": 9,
+            "right": 12,
+            "n_samples": 439,
+            "class": "GOOD"
+          },
+          {
+            "node": 9,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.6624937951564789,
+            "left": 10,
+            "right": 11,
+            "n_samples": 186,
+            "class": "GOOD"
+          },
+          {
+            "node": 10,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 59,
+            "class": "BAD"
+          },
+          {
+            "node": 11,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 127,
+            "class": "GOOD"
+          },
+          {
+            "node": 12,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.19063624739646912,
+            "left": 13,
+            "right": 14,
+            "n_samples": 253,
+            "class": "GOOD"
+          },
+          {
+            "node": 13,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 125,
+            "class": "GOOD"
+          },
+          {
+            "node": 14,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 128,
+            "class": "GOOD"
+          }
+        ]
+      },
+      {
+        "fold": 4,
+        "n_train": 732,
+        "n_test": 149,
+        "n": 149,
+        "n_bad": 12,
+        "n_good": 137,
+        "n_bad_flagged": 8,
+        "n_good_flagged": 38,
+        "bad_recall": 0.6666666666666666,
+        "good_kept": 0.7226277372262774,
+        "rules": "|--- f5 <= 0.517579\n|   |--- E_pp <= 0.210857\n|   |   |--- f5 <= 0.330402\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.330402\n|   |   |   |--- class: 0\n|   |--- E_pp >  0.210857\n|   |   |--- abs_skew <= 1.067989\n|   |   |   |--- class: 1\n|   |   |--- abs_skew >  1.067989\n|   |   |   |--- class: 0\n|--- f5 >  0.517579\n|   |--- E_pp <= 0.081430\n|   |   |--- f5 <= 0.644767\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.644767\n|   |   |   |--- class: 1\n|   |--- E_pp >  0.081430\n|   |   |--- f5 <= 0.632363\n|   |   |   |--- class: 1\n|   |   |--- f5 >  0.632363\n|   |   |   |--- class: 1\n",
+        "nodes": [
+          {
+            "node": 0,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.5175789594650269,
+            "left": 1,
+            "right": 8,
+            "n_samples": 732,
+            "class": "GOOD"
+          },
+          {
+            "node": 1,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.2108573392033577,
+            "left": 2,
+            "right": 5,
+            "n_samples": 276,
+            "class": "BAD"
+          },
+          {
+            "node": 2,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.33040182292461395,
+            "left": 3,
+            "right": 4,
+            "n_samples": 166,
+            "class": "BAD"
+          },
+          {
+            "node": 3,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 37,
+            "class": "BAD"
+          },
+          {
+            "node": 4,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 129,
+            "class": "BAD"
+          },
+          {
+            "node": 5,
+            "leaf": false,
+            "feature": "abs_skew",
+            "threshold": 1.0679887533187866,
+            "left": 6,
+            "right": 7,
+            "n_samples": 110,
+            "class": "GOOD"
+          },
+          {
+            "node": 6,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 98,
+            "class": "GOOD"
+          },
+          {
+            "node": 7,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 12,
+            "class": "BAD"
+          },
+          {
+            "node": 8,
+            "leaf": false,
+            "feature": "E_pp",
+            "threshold": 0.08142973110079765,
+            "left": 9,
+            "right": 12,
+            "n_samples": 456,
+            "class": "GOOD"
+          },
+          {
+            "node": 9,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.6447670161724091,
+            "left": 10,
+            "right": 11,
+            "n_samples": 198,
+            "class": "GOOD"
+          },
+          {
+            "node": 10,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 47,
+            "class": "BAD"
+          },
+          {
+            "node": 11,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 151,
+            "class": "GOOD"
+          },
+          {
+            "node": 12,
+            "leaf": false,
+            "feature": "f5",
+            "threshold": 0.6323629319667816,
+            "left": 13,
+            "right": 14,
+            "n_samples": 258,
+            "class": "GOOD"
+          },
+          {
+            "node": 13,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 103,
+            "class": "GOOD"
+          },
+          {
+            "node": 14,
+            "leaf": true,
+            "feature": null,
+            "threshold": null,
+            "left": null,
+            "right": null,
+            "n_samples": 155,
+            "class": "GOOD"
+          }
+        ]
+      }
+    ],
+    "descriptive_full_pool": {
+      "note": "fitted on all 1,011 L_AL signals, test signals included; for the paper's rule listing only, never scored",
+      "rules": "|--- f5 <= 0.517579\n|   |--- E_pp <= 0.190671\n|   |   |--- f5 <= 0.325372\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.325372\n|   |   |   |--- class: 0\n|   |--- E_pp >  0.190671\n|   |   |--- abs_skew <= 0.701737\n|   |   |   |--- class: 1\n|   |   |--- abs_skew >  0.701737\n|   |   |   |--- class: 0\n|--- f5 >  0.517579\n|   |--- E_pp <= 0.081430\n|   |   |--- f5 <= 0.713201\n|   |   |   |--- class: 0\n|   |   |--- f5 >  0.713201\n|   |   |   |--- class: 1\n|   |--- E_pp >  0.081430\n|   |   |--- f5 <= 0.632204\n|   |   |   |--- class: 1\n|   |   |--- f5 >  0.632204\n|   |   |   |--- class: 1\n",
+      "nodes": [
+        {
+          "node": 0,
+          "leaf": false,
+          "feature": "f5",
+          "threshold": 0.5175789594650269,
+          "left": 1,
+          "right": 8,
+          "n_samples": 1011,
+          "class": "GOOD"
+        },
+        {
+          "node": 1,
+          "leaf": false,
+          "feature": "E_pp",
+          "threshold": 0.19067083299160004,
+          "left": 2,
+          "right": 5,
+          "n_samples": 382,
+          "class": "BAD"
+        },
+        {
+          "node": 2,
+          "leaf": false,
+          "feature": "f5",
+          "threshold": 0.32537150382995605,
+          "left": 3,
+          "right": 4,
+          "n_samples": 215,
+          "class": "BAD"
+        },
+        {
+          "node": 3,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 40,
+          "class": "BAD"
+        },
+        {
+          "node": 4,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 175,
+          "class": "BAD"
+        },
+        {
+          "node": 5,
+          "leaf": false,
+          "feature": "abs_skew",
+          "threshold": 0.7017366886138916,
+          "left": 6,
+          "right": 7,
+          "n_samples": 167,
+          "class": "GOOD"
+        },
+        {
+          "node": 6,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 132,
+          "class": "GOOD"
+        },
+        {
+          "node": 7,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 35,
+          "class": "BAD"
+        },
+        {
+          "node": 8,
+          "leaf": false,
+          "feature": "E_pp",
+          "threshold": 0.08142973110079765,
+          "left": 9,
+          "right": 12,
+          "n_samples": 629,
+          "class": "GOOD"
+        },
+        {
+          "node": 9,
+          "leaf": false,
+          "feature": "f5",
+          "threshold": 0.7132005989551544,
+          "left": 10,
+          "right": 11,
+          "n_samples": 258,
+          "class": "GOOD"
+        },
+        {
+          "node": 10,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 115,
+          "class": "BAD"
+        },
+        {
+          "node": 11,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 143,
+          "class": "GOOD"
+        },
+        {
+          "node": 12,
+          "leaf": false,
+          "feature": "f5",
+          "threshold": 0.6322043240070343,
+          "left": 13,
+          "right": 14,
+          "n_samples": 371,
+          "class": "GOOD"
+        },
+        {
+          "node": 13,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 142,
+          "class": "GOOD"
+        },
+        {
+          "node": 14,
+          "leaf": true,
+          "feature": null,
+          "threshold": null,
+          "left": null,
+          "right": null,
+          "n_samples": 229,
+          "class": "GOOD"
+        }
+      ]
+    }
+  },
+  "microconv1d": null,
+  "microconv1d_note": "filled by the numbers generator from the E3 unc_oracle eta-0 cells (budget 600), not computed here",
+  "window": 500,
+  "normalisation": "none (raw first-500 samples, float32), as in the short paper",
+  "fold_seed": 0,
+  "code": {
+    "git_sha": "3cf6487c90c8863648ab58f4daa649830c4c8e67",
+    "files": [
+      "Curation_Paper/eswa_full/lib/rules_study.py",
+      "Curation_Paper/eswa_full/lib/specimen_cli.py",
+      "Curation_Paper/eswa_full/scripts/e09_rules.py"
+    ],
+    "dirty_files": []
+  },
+  "meta": {
+    "git_sha": "3cf6487c90c8863648ab58f4daa649830c4c8e67",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-16T20:37:05+00:00"
+  }
+}

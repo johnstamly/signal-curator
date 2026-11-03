@@ -1,0 +1,147 @@
+{
+  "n_al": 1011,
+  "n_rand": 1011,
+  "n_shared": 746,
+  "n_union": 1276,
+  "n_shared_disagree": 13,
+  "n_missing_in_h5": 0,
+  "missing_ids": [],
+  "shared_good_al": 684,
+  "shared_bad_al": 62,
+  "disagree": [
+    {
+      "signal_id": "FOD3_50kHz_act1_recv1_c0_r1",
+      "label_al": "GOOD",
+      "label_rand": "BAD",
+      "labeled_at_al": "2026-05-07 12:26:54",
+      "labeled_at_rand": "2026-05-01 10:02:39"
+    },
+    {
+      "signal_id": "FOD3_50kHz_act2_recv3_c2800_r1",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:26:12",
+      "labeled_at_rand": "2026-05-01 18:24:40"
+    },
+    {
+      "signal_id": "FOD3_50kHz_act3_recv3_c0_r3",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:26:18",
+      "labeled_at_rand": "2026-05-01 18:24:50"
+    },
+    {
+      "signal_id": "FOD3_50kHz_act4_recv1_c1400_r2",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:44:05",
+      "labeled_at_rand": "2026-05-01 18:24:53"
+    },
+    {
+      "signal_id": "FOD4_50kHz_act1_recv3_c0_r13",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:25:41",
+      "labeled_at_rand": "2026-05-01 10:04:58"
+    },
+    {
+      "signal_id": "FOD4_50kHz_act2_recv3_c3000_r6",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 13:11:47",
+      "labeled_at_rand": "2026-05-01 09:44:08"
+    },
+    {
+      "signal_id": "FOD4_50kHz_act3_recv1_c0_r13",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:25:33",
+      "labeled_at_rand": "2026-05-01 10:04:50"
+    },
+    {
+      "signal_id": "FOD4_50kHz_act4_recv1_c0_r78",
+      "label_al": "GOOD",
+      "label_rand": "BAD",
+      "labeled_at_al": "2026-05-04 12:44:16",
+      "labeled_at_rand": "2026-05-07 06:30:07"
+    },
+    {
+      "signal_id": "FOD5_50kHz_act1_recv3_c0_r16",
+      "label_al": "GOOD",
+      "label_rand": "BAD",
+      "labeled_at_al": "2026-05-07 13:10:47",
+      "labeled_at_rand": "2026-05-01 09:36:30"
+    },
+    {
+      "signal_id": "FOD5_50kHz_act1_recv3_c0_r23",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:43:54",
+      "labeled_at_rand": "2026-05-01 18:22:52"
+    },
+    {
+      "signal_id": "FOD5_50kHz_act2_recv3_c0_r7",
+      "label_al": "GOOD",
+      "label_rand": "BAD",
+      "labeled_at_al": "2026-05-07 13:10:51",
+      "labeled_at_rand": "2026-05-01 09:42:16"
+    },
+    {
+      "signal_id": "FOD5_50kHz_act3_recv3_c1600_r7",
+      "label_al": "GOOD",
+      "label_rand": "BAD",
+      "labeled_at_al": "2026-05-05 09:48:39",
+      "labeled_at_rand": "2026-05-07 06:34:52"
+    },
+    {
+      "signal_id": "FOD5_50kHz_act3_recv3_c200_r6",
+      "label_al": "BAD",
+      "label_rand": "GOOD",
+      "labeled_at_al": "2026-05-07 12:25:57",
+      "labeled_at_rand": "2026-05-01 18:22:14"
+    }
+  ],
+  "input_hashes": {
+    "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+    "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+  },
+  "meta": {
+    "git_sha": "1c6edc807bf10959445d2276c1f6f58afae448d6",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-16T16:20:47+00:00"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pools": {
+    "al": {
+      "path": "shared_labels.db",
+      "sha256": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1"
+    },
+    "rand": {
+      "path": "Curation_Paper/results/shared_labels_random.snapshot.db",
+      "sha256": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    }
+  },
+  "signals_h5": "Curation_Paper/zenodo_tier3/morpho_50khz_full.h5",
+  "freq_khz": 50,
+  "window": 500,
+  "seeds_stage1": [0, 1, 2, 3, 4],
+  "seeds_stage2": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "budgets": [100, 200, 300, 400, 500, 600],
+  "n_folds": 5,
+  "es_frac": 0.15,
+  "selection_claim_max_frac": 0.75,
+  "packages": {
+    "aeon": "1.6.0"
+  }
+}

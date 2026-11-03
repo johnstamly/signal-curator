@@ -1,0 +1,1137 @@
+{
+  "definition": {
+    "curated": "universe minus signals labelled BAD in either pool (reference label = L_AL where both pools hold the signal) minus unlabelled signals with E10 mean p < 0.5; labelled GOOD always kept",
+    "uncurated": "the whole 12,504-signal universe",
+    "di": "per path (panel, actuator, receiver) and cycle: mean over the condition's repetitions of RMS(x - b); x = raw first-500-sample window, no z-scoring; b = mean of that condition's kept repetitions at the path's baseline cycle, which is the path's first cycle >= 200 in the universe, chosen independently of the condition",
+    "monotonicity": "mean over paths of |Spearman(DI, cycle)| (nan paths excluded, counted)",
+    "panel_di": "median over paths per cycle; |Spearman| vs cycle",
+    "trendability": "Coble-Hines form: min and mean pairwise Pearson of the paths' DI trajectories over common cycles (units = paths; undefined pairs skipped, counted)",
+    "scores_source": "results/e10_scores.json (R24): E10 MicroConv1D on all of L_AL, seeds 0-4, scores averaged; no model retrained",
+    "threshold_p_accept": 0.5
+  },
+  "n_signals": 12504,
+  "window": 500,
+  "composition_of_curated_set": {
+    "n_universe": 12504,
+    "n_labelled_in_universe": 1276,
+    "n_removed_labelled_bad": 212,
+    "n_kept_labelled_good": 1064,
+    "n_unlabelled": 11228,
+    "n_removed_unlabelled_low_p": 720,
+    "n_kept_unlabelled": 10508,
+    "n_curated": 11572
+  },
+  "cycles_below_200": {
+    "min_cycle": 200,
+    "cycles_below_min_in_universe": [
+      0
+    ],
+    "n_signals_below_min": 1896,
+    "handling": "signals at cycles < 200 are excluded from every DI trajectory and from the Spearman/trendability computations (cycle 0 has different boundary conditions); they remain in the 'coverage' signal counts and in curated-set membership"
+  },
+  "counts": {
+    "curated": {
+      "n_signals_below_min_cycle": 1896,
+      "n_paths": 60,
+      "n_paths_dropped_no_kept_baseline": 0,
+      "n_path_cycles_total": 1212,
+      "n_path_cycles_missing": 83,
+      "n_path_cycles_present": 1129,
+      "n_path_cycles_in_dropped_paths": 0
+    },
+    "uncurated": {
+      "n_signals_below_min_cycle": 1896,
+      "n_paths": 60,
+      "n_paths_dropped_no_kept_baseline": 0,
+      "n_path_cycles_total": 1212,
+      "n_path_cycles_missing": 0,
+      "n_path_cycles_present": 1212,
+      "n_path_cycles_in_dropped_paths": 0
+    }
+  },
+  "panels": {
+    "FOD3": {
+      "curated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.6882466626081177,
+        "panel_di_abs_spearman": 0.8480519480519481,
+        "trend_min": -0.18554876049443764,
+        "trend_mean": 0.4828334799716957,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 21
+      },
+      "uncurated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.49264069264069255,
+        "panel_di_abs_spearman": 0.7116883116883117,
+        "trend_min": -0.5577361047664514,
+        "trend_mean": 0.20455776515319796,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 21
+      },
+      "difference": {
+        "monotonicity": 0.1956059699674252,
+        "panel_di_abs_spearman": 0.13636363636363635,
+        "trend_min": 0.3721873442720138,
+        "trend_mean": 0.2782757148184977
+      },
+      "path_paired_monotonicity": {
+        "n_paths_paired": 12,
+        "n_paths_common": 12,
+        "mean_diff": 0.19560596996742508,
+        "ci95": [
+          0.054448803260722746,
+          0.3237671728533764
+        ],
+        "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+      },
+      "coverage": {
+        "signals": {
+          "n_signals": 1104,
+          "n_kept": 430,
+          "kept_fraction": 0.3894927536231884
+        },
+        "curated": {
+          "n_paths": 12,
+          "n_path_cycles": 170
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_path_cycles": 252
+        },
+        "path_cycle_fraction_retained": 0.6746031746031746
+      }
+    },
+    "FOD4": {
+      "curated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.7402068283453733,
+        "panel_di_abs_spearman": 0.8513931888544891,
+        "trend_min": 0.21811078822446742,
+        "trend_mean": 0.6035462613047495,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 18
+      },
+      "uncurated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.736326109391125,
+        "panel_di_abs_spearman": 0.8513931888544891,
+        "trend_min": 0.21422767537431553,
+        "trend_mean": 0.579996057582802,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 18
+      },
+      "difference": {
+        "monotonicity": 0.0038807189542483522,
+        "panel_di_abs_spearman": 0.0,
+        "trend_min": 0.0038831128501518875,
+        "trend_mean": 0.023550203721947494
+      },
+      "path_paired_monotonicity": {
+        "n_paths_paired": 12,
+        "n_paths_common": 12,
+        "mean_diff": 0.00388071895424838,
+        "ci95": [
+          -0.006191950464396283,
+          0.01938209494324049
+        ],
+        "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+      },
+      "coverage": {
+        "signals": {
+          "n_signals": 3120,
+          "n_kept": 3023,
+          "kept_fraction": 0.9689102564102564
+        },
+        "curated": {
+          "n_paths": 12,
+          "n_path_cycles": 215
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_path_cycles": 216
+        },
+        "path_cycle_fraction_retained": 0.9953703703703703
+      }
+    },
+    "FOD5": {
+      "curated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.5931818181818181,
+        "panel_di_abs_spearman": 0.6376623376623376,
+        "trend_min": 0.17668573268775284,
+        "trend_mean": 0.5912415395205797,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 21
+      },
+      "uncurated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.5892857142857144,
+        "panel_di_abs_spearman": 0.6103896103896104,
+        "trend_min": 0.14236821690866722,
+        "trend_mean": 0.577159505430429,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 21
+      },
+      "difference": {
+        "monotonicity": 0.003896103896103731,
+        "panel_di_abs_spearman": 0.027272727272727226,
+        "trend_min": 0.03431751577908562,
+        "trend_mean": 0.01408203409015063
+      },
+      "path_paired_monotonicity": {
+        "n_paths_paired": 12,
+        "n_paths_common": 12,
+        "mean_diff": 0.003896103896103864,
+        "ci95": [
+          -0.01590909090909094,
+          0.028465909090909014
+        ],
+        "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+      },
+      "coverage": {
+        "signals": {
+          "n_signals": 2880,
+          "n_kept": 2809,
+          "kept_fraction": 0.9753472222222223
+        },
+        "curated": {
+          "n_paths": 12,
+          "n_path_cycles": 252
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_path_cycles": 252
+        },
+        "path_cycle_fraction_retained": 1.0
+      }
+    },
+    "FOD6": {
+      "curated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.4952380952380951,
+        "panel_di_abs_spearman": 0.5909774436090225,
+        "trend_min": -0.6497576223020798,
+        "trend_mean": 0.2712814083509325,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 20
+      },
+      "uncurated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.49573934837092715,
+        "panel_di_abs_spearman": 0.5909774436090225,
+        "trend_min": -0.6519832646234894,
+        "trend_mean": 0.26975658744326714,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 20
+      },
+      "difference": {
+        "monotonicity": -0.000501253132832058,
+        "panel_di_abs_spearman": 0.0,
+        "trend_min": 0.002225642321409649,
+        "trend_mean": 0.0015248209076653696
+      },
+      "path_paired_monotonicity": {
+        "n_paths_paired": 12,
+        "n_paths_common": 12,
+        "mean_diff": -0.0005012531328320811,
+        "ci95": [
+          -0.0026315789473684154,
+          0.001127819548872172
+        ],
+        "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+      },
+      "coverage": {
+        "signals": {
+          "n_signals": 2760,
+          "n_kept": 2748,
+          "kept_fraction": 0.9956521739130435
+        },
+        "curated": {
+          "n_paths": 12,
+          "n_path_cycles": 240
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_path_cycles": 240
+        },
+        "path_cycle_fraction_retained": 1.0
+      }
+    },
+    "FOD7": {
+      "curated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.7730519480519479,
+        "panel_di_abs_spearman": 0.835064935064935,
+        "trend_min": -0.5024714433847397,
+        "trend_mean": 0.3515943041545889,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 21
+      },
+      "uncurated": {
+        "n_paths": 12,
+        "n_paths_mono_nan": 0,
+        "monotonicity": 0.7718614718614719,
+        "panel_di_abs_spearman": 0.8987012987012987,
+        "trend_min": -0.5245827958189274,
+        "trend_mean": 0.3572882605061841,
+        "n_trend_pairs_defined": 66,
+        "n_trend_pairs_total": 66,
+        "n_cycles": 21
+      },
+      "difference": {
+        "monotonicity": 0.0011904761904759642,
+        "panel_di_abs_spearman": -0.06363636363636371,
+        "trend_min": 0.022111352434187714,
+        "trend_mean": -0.005693956351595197
+      },
+      "path_paired_monotonicity": {
+        "n_paths_paired": 12,
+        "n_paths_common": 12,
+        "mean_diff": 0.0011904761904761908,
+        "ci95": [
+          -0.0025974025974025844,
+          0.006168831168831157
+        ],
+        "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+      },
+      "coverage": {
+        "signals": {
+          "n_signals": 2640,
+          "n_kept": 2562,
+          "kept_fraction": 0.9704545454545455
+        },
+        "curated": {
+          "n_paths": 12,
+          "n_path_cycles": 252
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_path_cycles": 252
+        },
+        "path_cycle_fraction_retained": 1.0
+      }
+    }
+  },
+  "common_cycle": {
+    "description": "both conditions scored only on the path-cycles present in the curated condition (uncurated path-cycles missing in curated dropped); curated vs uncurated",
+    "panels": {
+      "FOD3": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.6882466626081177,
+          "panel_di_abs_spearman": 0.8480519480519481,
+          "trend_min": -0.18554876049443764,
+          "trend_mean": 0.4828334799716957,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.3886030163506944,
+          "panel_di_abs_spearman": 0.5194805194805194,
+          "trend_min": -0.4550623946640545,
+          "trend_mean": 0.22722754595241998,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": 0.29964364625742335,
+          "panel_di_abs_spearman": 0.3285714285714286,
+          "trend_min": 0.2695136341696169,
+          "trend_mean": 0.25560593401927567
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.29964364625742335,
+          "ci95": [
+            0.13758352538199678,
+            0.44860980619397783
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_path_cycles": {
+          "curated": 170,
+          "uncurated_restricted": 170,
+          "uncurated_full": 252
+        }
+      },
+      "FOD4": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7402068283453733,
+          "panel_di_abs_spearman": 0.8513931888544891,
+          "trend_min": 0.21811078822446742,
+          "trend_mean": 0.6035462613047495,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 18
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7377880976952186,
+          "panel_di_abs_spearman": 0.8513931888544891,
+          "trend_min": 0.21422767537431553,
+          "trend_mean": 0.5845243911976218,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 18
+        },
+        "difference": {
+          "monotonicity": 0.0024187306501547434,
+          "panel_di_abs_spearman": 0.0,
+          "trend_min": 0.0038831128501518875,
+          "trend_mean": 0.019021870107127747
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.002418730650154808,
+          "ci95": [
+            -0.006191950464396283,
+            0.014996130030959778
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_path_cycles": {
+          "curated": 215,
+          "uncurated_restricted": 215,
+          "uncurated_full": 216
+        }
+      },
+      "FOD5": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.5931818181818181,
+          "panel_di_abs_spearman": 0.6376623376623376,
+          "trend_min": 0.17668573268775284,
+          "trend_mean": 0.5912415395205797,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.5892857142857144,
+          "panel_di_abs_spearman": 0.6103896103896104,
+          "trend_min": 0.14236821690866722,
+          "trend_mean": 0.577159505430429,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": 0.003896103896103731,
+          "panel_di_abs_spearman": 0.027272727272727226,
+          "trend_min": 0.03431751577908562,
+          "trend_mean": 0.01408203409015063
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.003896103896103864,
+          "ci95": [
+            -0.01590909090909094,
+            0.028465909090909014
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_path_cycles": {
+          "curated": 252,
+          "uncurated_restricted": 252,
+          "uncurated_full": 252
+        }
+      },
+      "FOD6": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.4952380952380951,
+          "panel_di_abs_spearman": 0.5909774436090225,
+          "trend_min": -0.6497576223020798,
+          "trend_mean": 0.2712814083509325,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 20
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.49573934837092715,
+          "panel_di_abs_spearman": 0.5909774436090225,
+          "trend_min": -0.6519832646234894,
+          "trend_mean": 0.26975658744326714,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 20
+        },
+        "difference": {
+          "monotonicity": -0.000501253132832058,
+          "panel_di_abs_spearman": 0.0,
+          "trend_min": 0.002225642321409649,
+          "trend_mean": 0.0015248209076653696
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.0005012531328320811,
+          "ci95": [
+            -0.0026315789473684154,
+            0.001127819548872172
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_path_cycles": {
+          "curated": 240,
+          "uncurated_restricted": 240,
+          "uncurated_full": 240
+        }
+      },
+      "FOD7": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7730519480519479,
+          "panel_di_abs_spearman": 0.835064935064935,
+          "trend_min": -0.5024714433847397,
+          "trend_mean": 0.3515943041545889,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7718614718614719,
+          "panel_di_abs_spearman": 0.8987012987012987,
+          "trend_min": -0.5245827958189274,
+          "trend_mean": 0.3572882605061841,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": 0.0011904761904759642,
+          "panel_di_abs_spearman": -0.06363636363636371,
+          "trend_min": 0.022111352434187714,
+          "trend_mean": -0.005693956351595197
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.0011904761904761908,
+          "ci95": [
+            -0.0025974025974025844,
+            0.006168831168831157
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_path_cycles": {
+          "curated": 252,
+          "uncurated_restricted": 252,
+          "uncurated_full": 252
+        }
+      }
+    }
+  },
+  "labels_only": {
+    "description": "removes only signals whose reference label is BAD (L_AL wins); no model removal.  'full' = vs whole uncurated; 'common_cycle' = vs uncurated restricted to the labels-only path-cycles",
+    "n_signals_kept": 12292,
+    "counts": {
+      "n_signals_below_min_cycle": 1896,
+      "n_paths": 60,
+      "n_paths_dropped_no_kept_baseline": 0,
+      "n_path_cycles_total": 1212,
+      "n_path_cycles_missing": 1,
+      "n_path_cycles_present": 1211,
+      "n_path_cycles_in_dropped_paths": 0
+    },
+    "full": {
+      "FOD3": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.47166210982000445,
+          "panel_di_abs_spearman": 0.7467532467532467,
+          "trend_min": -0.6390509162159719,
+          "trend_mean": 0.20416235335319236,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.49264069264069255,
+          "panel_di_abs_spearman": 0.7116883116883117,
+          "trend_min": -0.5577361047664514,
+          "trend_mean": 0.20455776515319796,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": -0.020978582820688096,
+          "panel_di_abs_spearman": 0.03506493506493502,
+          "trend_min": -0.08131481144952046,
+          "trend_mean": -0.0003954118000056017
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.020978582820688107,
+          "ci95": [
+            -0.07360660173160172,
+            0.02814166097060831
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 1104,
+          "n_kept": 1006,
+          "kept_fraction": 0.9112318840579711
+        },
+        "coverage_path_cycles": {
+          "labels_only": 251,
+          "uncurated": 252
+        }
+      },
+      "FOD4": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7364981080151359,
+          "panel_di_abs_spearman": 0.8513931888544891,
+          "trend_min": 0.2159206421767428,
+          "trend_mean": 0.5805067577076539,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 18
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.736326109391125,
+          "panel_di_abs_spearman": 0.8513931888544891,
+          "trend_min": 0.21422767537431553,
+          "trend_mean": 0.579996057582802,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 18
+        },
+        "difference": {
+          "monotonicity": 0.00017199862401096055,
+          "panel_di_abs_spearman": 0.0,
+          "trend_min": 0.0016929668024272815,
+          "trend_mean": 0.0005107001248518817
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.00017199862401101607,
+          "ci95": [
+            0.0,
+            0.0005159958720330482
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 3120,
+          "n_kept": 3094,
+          "kept_fraction": 0.9916666666666667
+        },
+        "coverage_path_cycles": {
+          "labels_only": 216,
+          "uncurated": 216
+        }
+      },
+      "FOD5": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.5862554112554113,
+          "panel_di_abs_spearman": 0.6220779220779221,
+          "trend_min": 0.094089307194372,
+          "trend_mean": 0.5685968368703234,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.5892857142857144,
+          "panel_di_abs_spearman": 0.6103896103896104,
+          "trend_min": 0.14236821690866722,
+          "trend_mean": 0.577159505430429,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": -0.003030303030303161,
+          "panel_di_abs_spearman": 0.011688311688311748,
+          "trend_min": -0.048278909714295215,
+          "trend_mean": -0.00856266856010568
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.0030303030303030463,
+          "ci95": [
+            -0.010281385281385282,
+            0.004545454545454519
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 2880,
+          "n_kept": 2841,
+          "kept_fraction": 0.9864583333333333
+        },
+        "coverage_path_cycles": {
+          "labels_only": 252,
+          "uncurated": 252
+        }
+      },
+      "FOD6": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.4952380952380951,
+          "panel_di_abs_spearman": 0.5909774436090225,
+          "trend_min": -0.6497576223020798,
+          "trend_mean": 0.2713525380163686,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 20
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.49573934837092715,
+          "panel_di_abs_spearman": 0.5909774436090225,
+          "trend_min": -0.6519832646234894,
+          "trend_mean": 0.26975658744326714,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 20
+        },
+        "difference": {
+          "monotonicity": -0.000501253132832058,
+          "panel_di_abs_spearman": 0.0,
+          "trend_min": 0.002225642321409649,
+          "trend_mean": 0.0015959505731014678
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.0005012531328320811,
+          "ci95": [
+            -0.0026315789473684154,
+            0.001127819548872172
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 2760,
+          "n_kept": 2751,
+          "kept_fraction": 0.9967391304347826
+        },
+        "coverage_path_cycles": {
+          "labels_only": 240,
+          "uncurated": 240
+        }
+      },
+      "FOD7": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7733766233766234,
+          "panel_di_abs_spearman": 0.8883116883116883,
+          "trend_min": -0.525267451026346,
+          "trend_mean": 0.3470937825894093,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7718614718614719,
+          "panel_di_abs_spearman": 0.8987012987012987,
+          "trend_min": -0.5245827958189274,
+          "trend_mean": 0.3572882605061841,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": 0.0015151515151514694,
+          "panel_di_abs_spearman": -0.010389610389610393,
+          "trend_min": -0.0006846552074185608,
+          "trend_mean": -0.010194477916774802
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.001515151515151525,
+          "ci95": [
+            0.0,
+            0.0036796536796536994
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 2640,
+          "n_kept": 2600,
+          "kept_fraction": 0.9848484848484849
+        },
+        "coverage_path_cycles": {
+          "labels_only": 252,
+          "uncurated": 252
+        }
+      }
+    },
+    "common_cycle": {
+      "FOD3": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.47166210982000445,
+          "panel_di_abs_spearman": 0.7467532467532467,
+          "trend_min": -0.6390509162159719,
+          "trend_mean": 0.20416235335319236,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.49346092503987227,
+          "panel_di_abs_spearman": 0.7116883116883117,
+          "trend_min": -0.5682771102728001,
+          "trend_mean": 0.20662885112007903,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": -0.021798815219867818,
+          "panel_di_abs_spearman": 0.03506493506493502,
+          "trend_min": -0.07077380594317173,
+          "trend_mean": -0.002466497766886677
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.021798815219867863,
+          "ci95": [
+            -0.07419486215538848,
+            0.027816558441558413
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 1104,
+          "n_kept": 1006,
+          "kept_fraction": 0.9112318840579711
+        },
+        "coverage_path_cycles": {
+          "labels_only": 251,
+          "uncurated": 252
+        }
+      },
+      "FOD4": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7364981080151359,
+          "panel_di_abs_spearman": 0.8513931888544891,
+          "trend_min": 0.2159206421767428,
+          "trend_mean": 0.5805067577076539,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 18
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.736326109391125,
+          "panel_di_abs_spearman": 0.8513931888544891,
+          "trend_min": 0.21422767537431553,
+          "trend_mean": 0.579996057582802,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 18
+        },
+        "difference": {
+          "monotonicity": 0.00017199862401096055,
+          "panel_di_abs_spearman": 0.0,
+          "trend_min": 0.0016929668024272815,
+          "trend_mean": 0.0005107001248518817
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.00017199862401101607,
+          "ci95": [
+            0.0,
+            0.0005159958720330482
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 3120,
+          "n_kept": 3094,
+          "kept_fraction": 0.9916666666666667
+        },
+        "coverage_path_cycles": {
+          "labels_only": 216,
+          "uncurated": 216
+        }
+      },
+      "FOD5": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.5862554112554113,
+          "panel_di_abs_spearman": 0.6220779220779221,
+          "trend_min": 0.094089307194372,
+          "trend_mean": 0.5685968368703234,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.5892857142857144,
+          "panel_di_abs_spearman": 0.6103896103896104,
+          "trend_min": 0.14236821690866722,
+          "trend_mean": 0.577159505430429,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": -0.003030303030303161,
+          "panel_di_abs_spearman": 0.011688311688311748,
+          "trend_min": -0.048278909714295215,
+          "trend_mean": -0.00856266856010568
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.0030303030303030463,
+          "ci95": [
+            -0.010281385281385282,
+            0.004545454545454519
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 2880,
+          "n_kept": 2841,
+          "kept_fraction": 0.9864583333333333
+        },
+        "coverage_path_cycles": {
+          "labels_only": 252,
+          "uncurated": 252
+        }
+      },
+      "FOD6": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.4952380952380951,
+          "panel_di_abs_spearman": 0.5909774436090225,
+          "trend_min": -0.6497576223020798,
+          "trend_mean": 0.2713525380163686,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 20
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.49573934837092715,
+          "panel_di_abs_spearman": 0.5909774436090225,
+          "trend_min": -0.6519832646234894,
+          "trend_mean": 0.26975658744326714,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 20
+        },
+        "difference": {
+          "monotonicity": -0.000501253132832058,
+          "panel_di_abs_spearman": 0.0,
+          "trend_min": 0.002225642321409649,
+          "trend_mean": 0.0015959505731014678
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": -0.0005012531328320811,
+          "ci95": [
+            -0.0026315789473684154,
+            0.001127819548872172
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 2760,
+          "n_kept": 2751,
+          "kept_fraction": 0.9967391304347826
+        },
+        "coverage_path_cycles": {
+          "labels_only": 240,
+          "uncurated": 240
+        }
+      },
+      "FOD7": {
+        "curated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7733766233766234,
+          "panel_di_abs_spearman": 0.8883116883116883,
+          "trend_min": -0.525267451026346,
+          "trend_mean": 0.3470937825894093,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "uncurated": {
+          "n_paths": 12,
+          "n_paths_mono_nan": 0,
+          "monotonicity": 0.7718614718614719,
+          "panel_di_abs_spearman": 0.8987012987012987,
+          "trend_min": -0.5245827958189274,
+          "trend_mean": 0.3572882605061841,
+          "n_trend_pairs_defined": 66,
+          "n_trend_pairs_total": 66,
+          "n_cycles": 21
+        },
+        "difference": {
+          "monotonicity": 0.0015151515151514694,
+          "panel_di_abs_spearman": -0.010389610389610393,
+          "trend_min": -0.0006846552074185608,
+          "trend_mean": -0.010194477916774802
+        },
+        "path_paired_monotonicity": {
+          "n_paths_paired": 12,
+          "n_paths_common": 12,
+          "mean_diff": 0.001515151515151525,
+          "ci95": [
+            0.0,
+            0.0036796536796536994
+          ],
+          "ci_method": "percentile bootstrap over paths, 2000 resamples, seed 0"
+        },
+        "coverage_signals": {
+          "n_signals": 2640,
+          "n_kept": 2600,
+          "kept_fraction": 0.9848484848484849
+        },
+        "coverage_path_cycles": {
+          "labels_only": 252,
+          "uncurated": 252
+        }
+      }
+    }
+  },
+  "path_cycle_counts_used": {
+    "uncurated": 1212,
+    "curated": 1129,
+    "labels_only": 1211,
+    "uncurated_restricted_to_curated": 1129,
+    "uncurated_restricted_to_labels_only": 1211
+  },
+  "e10_scores_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "extra_input_hashes": {
+    "e10_scores.json": "d9c2c0ca8674c3c19d214bfe99fc74ae1e387659e0a552c75c95f66a9795fc4d",
+    "morpho_50khz_full.h5": "436e22d836e1b4f11322c45995a64ac1de71718a817ce9dfb75c88c27ea7e3e0"
+  },
+  "code": {
+    "git_sha": "7dfd8e7a13e3e198a6a054fc6d5ab89cf3b1166c",
+    "files": [
+      "Curation_Paper/eswa_full/lib/downstream.py",
+      "Curation_Paper/eswa_full/scripts/e11_downstream.py",
+      "Curation_Paper/eswa_full/tests/test_downstream.py"
+    ],
+    "dirty_files": []
+  },
+  "meta": {
+    "git_sha": "7dfd8e7a13e3e198a6a054fc6d5ab89cf3b1166c",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-16T21:05:22+00:00"
+  }
+}

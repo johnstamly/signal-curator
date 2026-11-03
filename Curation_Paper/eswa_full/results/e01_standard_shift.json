@@ -1,0 +1,350 @@
+{
+  "note": "The seed is defined by live_record.seed_and_added (L_AL IDs stamped on the first day of the L_rand session). 'model' columns use the E10 scores: a MicroConv1D trained on all of L_AL, so the two L_AL groups are in-sample for it. No cause of any difference is established.",
+  "groups": {
+    "seed_L_AL": {
+      "n": 743,
+      "n_bad": 62,
+      "n_good": 681,
+      "bad_fraction": 0.08344549125168237,
+      "per_panel": {
+        "FOD3": {
+          "n": 79,
+          "n_bad": 49,
+          "bad_fraction": 0.620253164556962
+        },
+        "FOD4": {
+          "n": 163,
+          "n_bad": 5,
+          "bad_fraction": 0.03067484662576687
+        },
+        "FOD5": {
+          "n": 168,
+          "n_bad": 4,
+          "bad_fraction": 0.023809523809523808
+        },
+        "FOD6": {
+          "n": 158,
+          "n_bad": 0,
+          "bad_fraction": 0.0
+        },
+        "FOD7": {
+          "n": 175,
+          "n_bad": 4,
+          "bad_fraction": 0.022857142857142857
+        }
+      },
+      "receiver": {
+        "0": {
+          "n": 165,
+          "share": 0.22207267833109018
+        },
+        "1": {
+          "n": 189,
+          "share": 0.2543741588156124
+        },
+        "2": {
+          "n": 196,
+          "share": 0.26379542395693134
+        },
+        "3": {
+          "n": 193,
+          "share": 0.2597577388963661
+        }
+      },
+      "cycle_zero": {
+        "n": 101,
+        "share": 0.13593539703903096
+      },
+      "model": {
+        "threshold": 0.5,
+        "n_scored": 743,
+        "n_missing_from_scores": 0,
+        "n_bad_scored": 62,
+        "n_good_scored": 681,
+        "n_bad_called_good": 0,
+        "n_good_called_bad": 3,
+        "n_disagree": 3,
+        "n_called_bad": 65,
+        "n_in_L_AL_training": 743
+      },
+      "pool_labels": "L_AL"
+    },
+    "seed_L_rand": {
+      "n": 743,
+      "n_bad": 57,
+      "n_good": 686,
+      "bad_fraction": 0.07671601615074024,
+      "per_panel": {
+        "FOD3": {
+          "n": 79,
+          "n_bad": 47,
+          "bad_fraction": 0.5949367088607594
+        },
+        "FOD4": {
+          "n": 163,
+          "n_bad": 2,
+          "bad_fraction": 0.012269938650306749
+        },
+        "FOD5": {
+          "n": 168,
+          "n_bad": 4,
+          "bad_fraction": 0.023809523809523808
+        },
+        "FOD6": {
+          "n": 158,
+          "n_bad": 0,
+          "bad_fraction": 0.0
+        },
+        "FOD7": {
+          "n": 175,
+          "n_bad": 4,
+          "bad_fraction": 0.022857142857142857
+        }
+      },
+      "receiver": {
+        "0": {
+          "n": 165,
+          "share": 0.22207267833109018
+        },
+        "1": {
+          "n": 189,
+          "share": 0.2543741588156124
+        },
+        "2": {
+          "n": 196,
+          "share": 0.26379542395693134
+        },
+        "3": {
+          "n": 193,
+          "share": 0.2597577388963661
+        }
+      },
+      "cycle_zero": {
+        "n": 101,
+        "share": 0.13593539703903096
+      },
+      "model": {
+        "threshold": 0.5,
+        "n_scored": 743,
+        "n_missing_from_scores": 0,
+        "n_bad_scored": 57,
+        "n_good_scored": 686,
+        "n_bad_called_good": 3,
+        "n_good_called_bad": 11,
+        "n_disagree": 14,
+        "n_called_bad": 65,
+        "n_in_L_AL_training": 743
+      },
+      "pool_labels": "L_rand"
+    },
+    "added_L_AL": {
+      "n": 268,
+      "n_bad": 74,
+      "n_good": 194,
+      "bad_fraction": 0.27611940298507465,
+      "per_panel": {
+        "FOD3": {
+          "n": 39,
+          "n_bad": 37,
+          "bad_fraction": 0.9487179487179487
+        },
+        "FOD4": {
+          "n": 53,
+          "n_bad": 11,
+          "bad_fraction": 0.20754716981132076
+        },
+        "FOD5": {
+          "n": 87,
+          "n_bad": 10,
+          "bad_fraction": 0.11494252873563218
+        },
+        "FOD6": {
+          "n": 17,
+          "n_bad": 0,
+          "bad_fraction": 0.0
+        },
+        "FOD7": {
+          "n": 72,
+          "n_bad": 16,
+          "bad_fraction": 0.2222222222222222
+        }
+      },
+      "receiver": {
+        "0": {
+          "n": 83,
+          "share": 0.30970149253731344
+        },
+        "1": {
+          "n": 37,
+          "share": 0.13805970149253732
+        },
+        "2": {
+          "n": 70,
+          "share": 0.26119402985074625
+        },
+        "3": {
+          "n": 78,
+          "share": 0.291044776119403
+        }
+      },
+      "cycle_zero": {
+        "n": 54,
+        "share": 0.20149253731343283
+      },
+      "model": {
+        "threshold": 0.5,
+        "n_scored": 268,
+        "n_missing_from_scores": 0,
+        "n_bad_scored": 74,
+        "n_good_scored": 194,
+        "n_bad_called_good": 4,
+        "n_good_called_bad": 1,
+        "n_disagree": 5,
+        "n_called_bad": 71,
+        "n_in_L_AL_training": 268
+      },
+      "pool_labels": "L_AL"
+    },
+    "added_L_rand": {
+      "n": 268,
+      "n_bad": 78,
+      "n_good": 190,
+      "bad_fraction": 0.291044776119403,
+      "per_panel": {
+        "FOD3": {
+          "n": 19,
+          "n_bad": 12,
+          "bad_fraction": 0.631578947368421
+        },
+        "FOD4": {
+          "n": 61,
+          "n_bad": 11,
+          "bad_fraction": 0.18032786885245902
+        },
+        "FOD5": {
+          "n": 72,
+          "n_bad": 26,
+          "bad_fraction": 0.3611111111111111
+        },
+        "FOD6": {
+          "n": 62,
+          "n_bad": 9,
+          "bad_fraction": 0.14516129032258066
+        },
+        "FOD7": {
+          "n": 54,
+          "n_bad": 20,
+          "bad_fraction": 0.37037037037037035
+        }
+      },
+      "receiver": {
+        "0": {
+          "n": 66,
+          "share": 0.2462686567164179
+        },
+        "1": {
+          "n": 82,
+          "share": 0.30597014925373134
+        },
+        "2": {
+          "n": 62,
+          "share": 0.23134328358208955
+        },
+        "3": {
+          "n": 58,
+          "share": 0.21641791044776118
+        }
+      },
+      "cycle_zero": {
+        "n": 40,
+        "share": 0.14925373134328357
+      },
+      "model": {
+        "threshold": 0.5,
+        "n_scored": 268,
+        "n_missing_from_scores": 0,
+        "n_bad_scored": 78,
+        "n_good_scored": 190,
+        "n_bad_called_good": 63,
+        "n_good_called_bad": 1,
+        "n_disagree": 64,
+        "n_called_bad": 16,
+        "n_in_L_AL_training": 3
+      },
+      "pool_labels": "L_rand"
+    }
+  },
+  "pools": {
+    "L_AL": {
+      "n": 1011,
+      "n_good": 875,
+      "n_bad": 136
+    },
+    "L_rand": {
+      "n": 1011,
+      "n_good": 876,
+      "n_bad": 135
+    }
+  },
+  "n_shared": 746,
+  "n_seed": 743,
+  "n_shared_outside_seed": 3,
+  "seed_ids_in_both_pools": true,
+  "scores": {
+    "n_ids": 12504,
+    "threshold": 0.5,
+    "n_group_ids_missing": 0
+  },
+  "extra_input_hashes": {
+    "e10_scores.json": "d9c2c0ca8674c3c19d214bfe99fc74ae1e387659e0a552c75c95f66a9795fc4d"
+  },
+  "code": {
+    "git_sha": "8fbcc1ca4b113d012c00aba84e19d68b5c004608",
+    "files": [
+      "Curation_Paper/eswa_full/lib/standard_shift.py",
+      "Curation_Paper/eswa_full/lib/live_record.py",
+      "Curation_Paper/eswa_full/scripts/e01_standard_shift.py",
+      "Curation_Paper/eswa_full/tests/test_standard_shift.py"
+    ],
+    "dirty_files": []
+  },
+  "meta": {
+    "git_sha": "8fbcc1ca4b113d012c00aba84e19d68b5c004608",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-18T04:24:49+00:00"
+  }
+}

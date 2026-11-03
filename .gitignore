@@ -20,8 +20,18 @@ venv/
 data/morpho_50khz_full/
 *.h5.tmp
 
-# User-generated labelling state — fresh DB per user
-shared_labels.db
+# Replay study: the HDF5 is copied in from data/morpho_50khz_full/, and per-cell results
+# and generated outputs are rebuilt locally (see Curation_Paper/README.md)
+Curation_Paper/zenodo_tier3/
+Curation_Paper/eswa_full/results/cells/
+Curation_Paper/eswa_full/latex/
+Curation_Paper/eswa_full/figures/
+
+# User-generated labelling state — fresh DB per user.  The root shared_labels.db is the
+# frozen guided-session label pool of the replay study and is committed on purpose.
+*/shared_labels.db
+*.db-wal
+*.db-shm
 *.db-journal
 model_*_weights.pt
 exports/

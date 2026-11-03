@@ -21,8 +21,12 @@ monitoring (SHM) campaigns.
 - **Catches operator mistakes** — built-in FP/FN re-inspection step surfaces
   past labels the model now disagrees with, letting the operator audit and
   correct themselves
-- **Battle-tested on real data** — achieves ≈96% validation accuracy on the
-  MORPHO H2020 guided-wave dataset after labelling ≈8% of 12,504 signals
+- **Tested on real data** — used to curate 12,504 signals of the MORPHO H2020
+  guided-wave dataset with 1,011 operator labels (≈8%). In a retrospective
+  replay, guided selection beat random selection by 5.4 percentage points of
+  balanced accuracy at 200 labels and 2.9 at 500, and operator re-inspection
+  recovered most injected label errors that reached the labelled set
+  (see [`Curation_Paper/README.md`](Curation_Paper/README.md))
 - **Frequency- and domain-agnostic core** — generic 1D-signal abstraction; the
   guided-wave actuator/receiver/drive-channel handling is isolated in a
   dedicated adapter module
@@ -45,13 +49,20 @@ streamlit run src/signal_curator/app.py
 
 ## Reproducing the paper
 
-The repo ships with the **1,011-signal labelled subset** from the paper
-(`data/morpho_50khz_curated/`, ~8 MB). To reproduce the convergence curve
-(Fig 3) end-to-end:
+Every retrospective result of the paper (the replay of the labelling session,
+re-inspection under injected label noise, the classifier comparison, the
+ablations, thresholds, coverage and classical filters) comes from the code in
+[`Curation_Paper/eswa_full/`](Curation_Paper/eswa_full/). It is published
+unchanged from the code that produced the results, together with both frozen
+label pools and the study results. Follow
+[`Curation_Paper/README.md`](Curation_Paper/README.md) to verify the inputs,
+rebuild every reported number from the stored results, or rerun the studies.
+
+The repo also ships with the **1,011-signal labelled subset** from the paper
+(`data/morpho_50khz_curated/`, ~8 MB), which opens in the labelling app:
 
 ```bash
 signal-curator demo --dataset morpho_50khz_curated
-# inside the app: switch frequency to 50 kHz, click "Train & Filter Dataset"
 ```
 
 The **full 12,504-signal MORPHO 50 kHz universe** (~93 MB) is archived at
@@ -84,6 +95,7 @@ exclusion, frequency-stratified labels), see
 
 ## Citation
 
+```bibtex
 @software{stamatelatos2026signal_curator,
   title   = {signal-curator: human-in-the-loop active learning for 1D signal datasets},
   author  = {Stamatelatos, Giannis},
@@ -105,7 +117,7 @@ changes so we can discuss scope.
 ## Acknowledgments
 
 The MORPHO dataset is provided by the H2020 MORPHO project
-([Zenodo](https://zenodo.org/records/paunikar2025zenodo)). The signal-curator
+([Zenodo](https://doi.org/10.5281/zenodo.14627730)). The signal-curator
 pipeline was developed at the
 [Applied Mechanics & Vibrations Laboratory](https://www.upatras.gr/),
 University of Patras, Greece.

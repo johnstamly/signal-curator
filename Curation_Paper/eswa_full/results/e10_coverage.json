@@ -1,0 +1,958 @@
+{
+  "threshold": 0.5,
+  "rule": "GOOD iff seed-averaged p >= 0.5",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_signals": 12504,
+  "n_good": 11632,
+  "panels": {
+    "FOD3": {
+      "cycles": [
+        {
+          "cycle": 0,
+          "n": 96,
+          "n_good": 27,
+          "good_fraction": 0.28125
+        },
+        {
+          "cycle": 200,
+          "n": 48,
+          "n_good": 12,
+          "good_fraction": 0.25
+        },
+        {
+          "cycle": 400,
+          "n": 48,
+          "n_good": 13,
+          "good_fraction": 0.2708333333333333
+        },
+        {
+          "cycle": 600,
+          "n": 48,
+          "n_good": 16,
+          "good_fraction": 0.3333333333333333
+        },
+        {
+          "cycle": 800,
+          "n": 48,
+          "n_good": 15,
+          "good_fraction": 0.3125
+        },
+        {
+          "cycle": 1000,
+          "n": 48,
+          "n_good": 11,
+          "good_fraction": 0.22916666666666666
+        },
+        {
+          "cycle": 1200,
+          "n": 48,
+          "n_good": 15,
+          "good_fraction": 0.3125
+        },
+        {
+          "cycle": 1400,
+          "n": 48,
+          "n_good": 8,
+          "good_fraction": 0.16666666666666666
+        },
+        {
+          "cycle": 1600,
+          "n": 48,
+          "n_good": 2,
+          "good_fraction": 0.041666666666666664
+        },
+        {
+          "cycle": 1800,
+          "n": 48,
+          "n_good": 8,
+          "good_fraction": 0.16666666666666666
+        },
+        {
+          "cycle": 2000,
+          "n": 48,
+          "n_good": 33,
+          "good_fraction": 0.6875
+        },
+        {
+          "cycle": 2200,
+          "n": 48,
+          "n_good": 36,
+          "good_fraction": 0.75
+        },
+        {
+          "cycle": 2400,
+          "n": 48,
+          "n_good": 40,
+          "good_fraction": 0.8333333333333334
+        },
+        {
+          "cycle": 2500,
+          "n": 48,
+          "n_good": 42,
+          "good_fraction": 0.875
+        },
+        {
+          "cycle": 2600,
+          "n": 48,
+          "n_good": 43,
+          "good_fraction": 0.8958333333333334
+        },
+        {
+          "cycle": 2700,
+          "n": 48,
+          "n_good": 15,
+          "good_fraction": 0.3125
+        },
+        {
+          "cycle": 2800,
+          "n": 48,
+          "n_good": 16,
+          "good_fraction": 0.3333333333333333
+        },
+        {
+          "cycle": 2900,
+          "n": 48,
+          "n_good": 16,
+          "good_fraction": 0.3333333333333333
+        },
+        {
+          "cycle": 3000,
+          "n": 48,
+          "n_good": 16,
+          "good_fraction": 0.3333333333333333
+        },
+        {
+          "cycle": 3100,
+          "n": 48,
+          "n_good": 15,
+          "good_fraction": 0.3125
+        },
+        {
+          "cycle": 3200,
+          "n": 48,
+          "n_good": 12,
+          "good_fraction": 0.25
+        },
+        {
+          "cycle": 3300,
+          "n": 48,
+          "n_good": 16,
+          "good_fraction": 0.3333333333333333
+        }
+      ],
+      "n_cycles": 22,
+      "n_signals": 1104,
+      "n_good": 427,
+      "pooled_good_fraction": 0.3867753623188406,
+      "mean_good_fraction": 0.3915719696969697,
+      "n_cycles_below_50": 17,
+      "cycles_zero_good": []
+    },
+    "FOD4": {
+      "cycles": [
+        {
+          "cycle": 0,
+          "n": 960,
+          "n_good": 922,
+          "good_fraction": 0.9604166666666667
+        },
+        {
+          "cycle": 200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 600,
+          "n": 120,
+          "n_good": 105,
+          "good_fraction": 0.875
+        },
+        {
+          "cycle": 800,
+          "n": 120,
+          "n_good": 114,
+          "good_fraction": 0.95
+        },
+        {
+          "cycle": 1000,
+          "n": 120,
+          "n_good": 115,
+          "good_fraction": 0.9583333333333334
+        },
+        {
+          "cycle": 1200,
+          "n": 120,
+          "n_good": 112,
+          "good_fraction": 0.9333333333333333
+        },
+        {
+          "cycle": 1400,
+          "n": 120,
+          "n_good": 118,
+          "good_fraction": 0.9833333333333333
+        },
+        {
+          "cycle": 1600,
+          "n": 120,
+          "n_good": 118,
+          "good_fraction": 0.9833333333333333
+        },
+        {
+          "cycle": 1800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2500,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2600,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2700,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2900,
+          "n": 120,
+          "n_good": 115,
+          "good_fraction": 0.9583333333333334
+        },
+        {
+          "cycle": 3000,
+          "n": 120,
+          "n_good": 111,
+          "good_fraction": 0.925
+        }
+      ],
+      "n_cycles": 19,
+      "n_signals": 3120,
+      "n_good": 3030,
+      "pooled_good_fraction": 0.9711538461538461,
+      "mean_good_fraction": 0.9751096491228071,
+      "n_cycles_below_50": 0,
+      "cycles_zero_good": []
+    },
+    "FOD5": {
+      "cycles": [
+        {
+          "cycle": 0,
+          "n": 360,
+          "n_good": 356,
+          "good_fraction": 0.9888888888888889
+        },
+        {
+          "cycle": 200,
+          "n": 120,
+          "n_good": 114,
+          "good_fraction": 0.95
+        },
+        {
+          "cycle": 400,
+          "n": 120,
+          "n_good": 117,
+          "good_fraction": 0.975
+        },
+        {
+          "cycle": 600,
+          "n": 120,
+          "n_good": 118,
+          "good_fraction": 0.9833333333333333
+        },
+        {
+          "cycle": 800,
+          "n": 120,
+          "n_good": 116,
+          "good_fraction": 0.9666666666666667
+        },
+        {
+          "cycle": 1000,
+          "n": 120,
+          "n_good": 110,
+          "good_fraction": 0.9166666666666666
+        },
+        {
+          "cycle": 1200,
+          "n": 120,
+          "n_good": 112,
+          "good_fraction": 0.9333333333333333
+        },
+        {
+          "cycle": 1400,
+          "n": 120,
+          "n_good": 118,
+          "good_fraction": 0.9833333333333333
+        },
+        {
+          "cycle": 1600,
+          "n": 120,
+          "n_good": 118,
+          "good_fraction": 0.9833333333333333
+        },
+        {
+          "cycle": 1800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2500,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        },
+        {
+          "cycle": 2600,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        },
+        {
+          "cycle": 2700,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2800,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        },
+        {
+          "cycle": 2900,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3000,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        },
+        {
+          "cycle": 3100,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3300,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        }
+      ],
+      "n_cycles": 22,
+      "n_signals": 2880,
+      "n_good": 2835,
+      "pooled_good_fraction": 0.984375,
+      "mean_good_fraction": 0.9839646464646464,
+      "n_cycles_below_50": 0,
+      "cycles_zero_good": []
+    },
+    "FOD6": {
+      "cycles": [
+        {
+          "cycle": 0,
+          "n": 360,
+          "n_good": 360,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 600,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 1000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 1200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 1400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 1600,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 1800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2500,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2600,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        },
+        {
+          "cycle": 2700,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2900,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3100,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        },
+        {
+          "cycle": 3200,
+          "n": 120,
+          "n_good": 119,
+          "good_fraction": 0.9916666666666667
+        }
+      ],
+      "n_cycles": 21,
+      "n_signals": 2760,
+      "n_good": 2757,
+      "pooled_good_fraction": 0.9989130434782608,
+      "mean_good_fraction": 0.9988095238095239,
+      "n_cycles_below_50": 0,
+      "cycles_zero_good": []
+    },
+    "FOD7": {
+      "cycles": [
+        {
+          "cycle": 0,
+          "n": 120,
+          "n_good": 114,
+          "good_fraction": 0.95
+        },
+        {
+          "cycle": 200,
+          "n": 120,
+          "n_good": 114,
+          "good_fraction": 0.95
+        },
+        {
+          "cycle": 400,
+          "n": 120,
+          "n_good": 113,
+          "good_fraction": 0.9416666666666667
+        },
+        {
+          "cycle": 600,
+          "n": 120,
+          "n_good": 116,
+          "good_fraction": 0.9666666666666667
+        },
+        {
+          "cycle": 800,
+          "n": 120,
+          "n_good": 114,
+          "good_fraction": 0.95
+        },
+        {
+          "cycle": 1000,
+          "n": 120,
+          "n_good": 114,
+          "good_fraction": 0.95
+        },
+        {
+          "cycle": 1200,
+          "n": 120,
+          "n_good": 118,
+          "good_fraction": 0.9833333333333333
+        },
+        {
+          "cycle": 1400,
+          "n": 120,
+          "n_good": 113,
+          "good_fraction": 0.9416666666666667
+        },
+        {
+          "cycle": 1600,
+          "n": 120,
+          "n_good": 107,
+          "good_fraction": 0.8916666666666667
+        },
+        {
+          "cycle": 1800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2400,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2500,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2600,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2700,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2800,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 2900,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3000,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3100,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3200,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        },
+        {
+          "cycle": 3300,
+          "n": 120,
+          "n_good": 120,
+          "good_fraction": 1.0
+        }
+      ],
+      "n_cycles": 22,
+      "n_signals": 2640,
+      "n_good": 2583,
+      "pooled_good_fraction": 0.9784090909090909,
+      "mean_good_fraction": 0.9784090909090909,
+      "n_cycles_below_50": 0,
+      "cycles_zero_good": []
+    }
+  },
+  "per_seed_panel_summary": {
+    "0": {
+      "FOD3": {
+        "pooled_good_fraction": 0.3786231884057971,
+        "mean_good_fraction": 0.3835227272727273,
+        "n_cycles_below_50": 17
+      },
+      "FOD4": {
+        "pooled_good_fraction": 0.9650641025641026,
+        "mean_good_fraction": 0.974451754385965,
+        "n_cycles_below_50": 0
+      },
+      "FOD5": {
+        "pooled_good_fraction": 0.9739583333333334,
+        "mean_good_fraction": 0.9738636363636364,
+        "n_cycles_below_50": 0
+      },
+      "FOD6": {
+        "pooled_good_fraction": 0.9978260869565218,
+        "mean_good_fraction": 0.9976190476190477,
+        "n_cycles_below_50": 0
+      },
+      "FOD7": {
+        "pooled_good_fraction": 0.9727272727272728,
+        "mean_good_fraction": 0.9727272727272727,
+        "n_cycles_below_50": 0
+      }
+    },
+    "1": {
+      "FOD3": {
+        "pooled_good_fraction": 0.3813405797101449,
+        "mean_good_fraction": 0.38683712121212116,
+        "n_cycles_below_50": 17
+      },
+      "FOD4": {
+        "pooled_good_fraction": 0.9769230769230769,
+        "mean_good_fraction": 0.9787828947368421,
+        "n_cycles_below_50": 0
+      },
+      "FOD5": {
+        "pooled_good_fraction": 0.9809027777777778,
+        "mean_good_fraction": 0.9809343434343436,
+        "n_cycles_below_50": 0
+      },
+      "FOD6": {
+        "pooled_good_fraction": 0.9978260869565218,
+        "mean_good_fraction": 0.9976190476190477,
+        "n_cycles_below_50": 0
+      },
+      "FOD7": {
+        "pooled_good_fraction": 0.978030303030303,
+        "mean_good_fraction": 0.978030303030303,
+        "n_cycles_below_50": 0
+      }
+    },
+    "2": {
+      "FOD3": {
+        "pooled_good_fraction": 0.36141304347826086,
+        "mean_good_fraction": 0.3678977272727273,
+        "n_cycles_below_50": 17
+      },
+      "FOD4": {
+        "pooled_good_fraction": 0.9733974358974359,
+        "mean_good_fraction": 0.9747258771929826,
+        "n_cycles_below_50": 0
+      },
+      "FOD5": {
+        "pooled_good_fraction": 0.9840277777777777,
+        "mean_good_fraction": 0.9835858585858586,
+        "n_cycles_below_50": 0
+      },
+      "FOD6": {
+        "pooled_good_fraction": 0.9981884057971014,
+        "mean_good_fraction": 0.9980158730158731,
+        "n_cycles_below_50": 0
+      },
+      "FOD7": {
+        "pooled_good_fraction": 0.9746212121212121,
+        "mean_good_fraction": 0.9746212121212121,
+        "n_cycles_below_50": 0
+      }
+    },
+    "3": {
+      "FOD3": {
+        "pooled_good_fraction": 0.39945652173913043,
+        "mean_good_fraction": 0.40482954545454547,
+        "n_cycles_below_50": 17
+      },
+      "FOD4": {
+        "pooled_good_fraction": 0.9644230769230769,
+        "mean_good_fraction": 0.9728070175438597,
+        "n_cycles_below_50": 0
+      },
+      "FOD5": {
+        "pooled_good_fraction": 0.9791666666666666,
+        "mean_good_fraction": 0.9787878787878789,
+        "n_cycles_below_50": 0
+      },
+      "FOD6": {
+        "pooled_good_fraction": 0.9978260869565218,
+        "mean_good_fraction": 0.9976190476190477,
+        "n_cycles_below_50": 0
+      },
+      "FOD7": {
+        "pooled_good_fraction": 0.9784090909090909,
+        "mean_good_fraction": 0.9784090909090909,
+        "n_cycles_below_50": 0
+      }
+    },
+    "4": {
+      "FOD3": {
+        "pooled_good_fraction": 0.3858695652173913,
+        "mean_good_fraction": 0.390625,
+        "n_cycles_below_50": 17
+      },
+      "FOD4": {
+        "pooled_good_fraction": 0.9721153846153846,
+        "mean_good_fraction": 0.9775767543859649,
+        "n_cycles_below_50": 0
+      },
+      "FOD5": {
+        "pooled_good_fraction": 0.9777777777777777,
+        "mean_good_fraction": 0.9770202020202021,
+        "n_cycles_below_50": 0
+      },
+      "FOD6": {
+        "pooled_good_fraction": 0.9992753623188406,
+        "mean_good_fraction": 0.9992063492063492,
+        "n_cycles_below_50": 0
+      },
+      "FOD7": {
+        "pooled_good_fraction": 0.9761363636363637,
+        "mean_good_fraction": 0.9761363636363637,
+        "n_cycles_below_50": 0
+      }
+    }
+  },
+  "fits": [
+    {
+      "seed": 0,
+      "es_loss": 0.058541182428598404,
+      "epochs": 300,
+      "train_seconds": 49.47096539998893,
+      "device": "cuda",
+      "n_train": 860,
+      "n_es": 151,
+      "n_es_bad": 20
+    },
+    {
+      "seed": 1,
+      "es_loss": 0.14301635324954987,
+      "epochs": 166,
+      "train_seconds": 25.97414070001105,
+      "device": "cuda",
+      "n_train": 860,
+      "n_es": 151,
+      "n_es_bad": 20
+    },
+    {
+      "seed": 2,
+      "es_loss": 0.10440100729465485,
+      "epochs": 145,
+      "train_seconds": 22.641455000033602,
+      "device": "cuda",
+      "n_train": 860,
+      "n_es": 151,
+      "n_es_bad": 20
+    },
+    {
+      "seed": 3,
+      "es_loss": 0.09769632667303085,
+      "epochs": 300,
+      "train_seconds": 47.379607899987604,
+      "device": "cuda",
+      "n_train": 860,
+      "n_es": 151,
+      "n_es_bad": 20
+    },
+    {
+      "seed": 4,
+      "es_loss": 0.07813557982444763,
+      "epochs": 198,
+      "train_seconds": 31.278074299974833,
+      "device": "cuda",
+      "n_train": 860,
+      "n_es": 151,
+      "n_es_bad": 20
+    }
+  ],
+  "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+  },
+  "code": {
+    "git_sha": "3cf6487c90c8863648ab58f4daa649830c4c8e67",
+    "files": [
+      "Curation_Paper/eswa_full/lib/coverage_study.py",
+      "Curation_Paper/eswa_full/lib/specimen_cli.py",
+      "Curation_Paper/eswa_full/scripts/e10_coverage.py"
+    ],
+    "dirty_files": []
+  },
+  "meta": {
+    "git_sha": "3cf6487c90c8863648ab58f4daa649830c4c8e67",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-16T20:40:33+00:00"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "len_train_pool": {
+    "min": 732,
+    "max": 733,
+    "n_cells": 75
+  },
+  "len_es": {
+    "min": 129,
+    "max": 130,
+    "n_cells": 75
+  },
+  "n_test": {
+    "min": 149,
+    "max": 150,
+    "n_cells": 75
+  },
+  "n_cells": 75,
+  "source": "E1 loop cells (unc_oracle/L_AL, random/L_rand, random/L_AL; eta 0)",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "stage": "stage1",
+  "cells_code_key": "84a02678827a691b4a013a1c2f3cda42be00c35e994017ae908b5f12f943d5b5",
+  "cells_key_counts": {
+    "84a02678827a691b4a013a1c2f3cda42be00c35e994017ae908b5f12f943d5b5": 75
+  },
+  "cells_git_shas": {
+    "87570a8151579548b6beed1183bce94b82a24ebd": 25,
+    "051f94110b251c32d2bf3fb0853335fd55dece7d": 50
+  },
+  "cells_dirty": 0,
+  "code": {
+    "git_sha": "8fbcc1ca4b113d012c00aba84e19d68b5c004608",
+    "files": [
+      "Curation_Paper/eswa_full/lib/pool_sizes.py",
+      "Curation_Paper/eswa_full/scripts/e00_pool_sizes.py",
+      "Curation_Paper/eswa_full/tests/test_pool_sizes.py"
+    ],
+    "dirty_files": []
+  },
+  "meta": {
+    "git_sha": "8fbcc1ca4b113d012c00aba84e19d68b5c004608",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-18T04:24:55+00:00"
+  }
+}
