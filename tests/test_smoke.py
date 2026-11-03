@@ -16,7 +16,7 @@ def test_imports():
         make_adapter,
         __version__,
     )
-    assert __version__ == "0.1.1"
+    assert __version__ == "0.2.0"
     assert callable(make_adapter)
 
 
