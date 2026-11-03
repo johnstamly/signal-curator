@@ -45,12 +45,15 @@ Run every command from the repository root.
    pip install -e ".[replay]"
    ```
 
-2. Fetch the 12,504-signal HDF5 from Zenodo and place it where the protocol expects it.
+2. Fetch the 12,504-signal HDF5 and the label file from the Zenodo dataset record
+   ([10.5281/zenodo.20120069](https://doi.org/10.5281/zenodo.20120069)) into the folder the
+   protocol expects. The HDF5 has SHA-256
+   `436e22d836e1b4f11322c45995a64ac1de71718a817ce9dfb75c88c27ea7e3e0`.
 
    ```bash
-   python scripts/download_morpho_full.py
    mkdir -p Curation_Paper/zenodo_tier3
-   cp data/morpho_50khz_full/signals.h5 Curation_Paper/zenodo_tier3/morpho_50khz_full.h5
+   curl -L -o Curation_Paper/zenodo_tier3/morpho_50khz_full.h5 https://zenodo.org/records/20120070/files/morpho_50khz_full.h5
+   curl -L -o Curation_Paper/zenodo_tier3/paper_labels.json https://zenodo.org/records/20120070/files/paper_labels.json
    ```
 
 3. Verify the frozen inputs. This checks both pool hashes and that every labelled signal

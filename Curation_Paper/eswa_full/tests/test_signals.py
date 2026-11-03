@@ -60,6 +60,8 @@ def test_load_universe_rejects_short_dataset(tmp_path):
         load_universe(cfg)
 
 
+@pytest.mark.skipif(not (REPO_ROOT / "dataset.h5").is_file(),
+                    reason="the raw research-repository HDF5 is not published")
 def test_first_500_equal_old_dataset(universe):
     ids, X = universe
     cfg = load_config()
