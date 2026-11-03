@@ -1,0 +1,134 @@
+{
+  "selected": [
+    {
+      "arch": "bigru",
+      "es_auroc_mean": 0.9516182849516183,
+      "recipe": {
+        "activation": "leaky",
+        "augment": true,
+        "batch_size": 64,
+        "class_weight": "sqrt",
+        "grad_clip": 1.0,
+        "lr": 0.001,
+        "max_epochs": 300,
+        "minirocket_kernels": 10000,
+        "model_cfg": {},
+        "patience": 60,
+        "weight_decay": 0.001,
+        "window": null,
+        "zscore": true
+      },
+      "n_params": 26529,
+      "size": 26529,
+      "size_unit": "parameters"
+    },
+    {
+      "arch": "cnn_wide",
+      "es_auroc_mean": 0.9514514514514515,
+      "recipe": {
+        "activation": "leaky",
+        "augment": true,
+        "batch_size": 64,
+        "class_weight": "sqrt",
+        "grad_clip": 1.0,
+        "lr": 0.0001,
+        "max_epochs": 300,
+        "minirocket_kernels": 10000,
+        "model_cfg": {
+          "width": 1.15
+        },
+        "patience": 60,
+        "weight_decay": 0.001,
+        "window": null,
+        "zscore": true
+      },
+      "n_params": 36930,
+      "size": 36930,
+      "size_unit": "parameters"
+    },
+    {
+      "arch": "resnet1d",
+      "es_auroc_mean": 0.9402736069402736,
+      "recipe": {
+        "activation": "leaky",
+        "augment": true,
+        "batch_size": 64,
+        "class_weight": "sqrt",
+        "grad_clip": 1.0,
+        "lr": 0.0001,
+        "max_epochs": 300,
+        "minirocket_kernels": 10000,
+        "model_cfg": {
+          "width": 0.85
+        },
+        "patience": 60,
+        "weight_decay": 0.001,
+        "window": null,
+        "zscore": true
+      },
+      "n_params": 79580,
+      "size": 79580,
+      "size_unit": "parameters"
+    }
+  ],
+  "ranking_basis": "mean es AUROC of the frozen config over tune seeds (fold 0)",
+  "microconv1d": {
+    "recipe": {
+      "activation": "relu",
+      "augment": true,
+      "batch_size": 64,
+      "class_weight": "sqrt",
+      "grad_clip": 1.0,
+      "lr": 0.001,
+      "max_epochs": 300,
+      "minirocket_kernels": 10000,
+      "model_cfg": {},
+      "patience": 60,
+      "weight_decay": 0.001,
+      "window": null,
+      "zscore": true
+    },
+    "frozen_equals_default": false
+  },
+  "tuning_leakage_note": "Tuning on fold 0 trains and early-stops on rows that are TEST rows of folds 1-4, so the frozen hyper-parameters carry information from those rows' labels. Results on fold 0 alone are the strictly clean slice (re-score from the stored predictions).",
+  "frozen_from": "E:\\Giannis\\Guided Wave SHM Advanced Losses\\Curation_Paper\\eswa_full\\results\\e04_frozen_configs.json",
+  "meta": {
+    "git_sha": "a387a734692355e9220a8b750f25976d30195d60",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-17T07:44:55+00:00"
+  }
+}

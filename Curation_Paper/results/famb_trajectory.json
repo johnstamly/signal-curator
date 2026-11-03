@@ -1,0 +1,42 @@
+{
+  "band": 0.1,
+  "source": "iteration_distributions.json.gz",
+  "iterations": [
+    {
+      "iteration": 1,
+      "n_labels": 743,
+      "f_amb_all_scored": 0.006386159194034868,
+      "n_unlabelled_all_scored": 113057,
+      "f_amb_pool_12504": 0.004166312388402347,
+      "n_ambiguous_pool_12504": 49,
+      "n_unlabelled_pool_12504": 11761
+    },
+    {
+      "iteration": 2,
+      "n_labels": 832,
+      "f_amb_all_scored": 0.09929360526874867,
+      "n_unlabelled_all_scored": 112968,
+      "f_amb_pool_12504": 0.019448252227553118,
+      "n_ambiguous_pool_12504": 227,
+      "n_unlabelled_pool_12504": 11672
+    },
+    {
+      "iteration": 3,
+      "n_labels": 913,
+      "f_amb_all_scored": 0.06215950463738074,
+      "n_unlabelled_all_scored": 112887,
+      "f_amb_pool_12504": 0.011992062807350531,
+      "n_ambiguous_pool_12504": 139,
+      "n_unlabelled_pool_12504": 11591
+    },
+    {
+      "iteration": 4,
+      "n_labels": 1011,
+      "f_amb_all_scored": 0.09866210357393009,
+      "n_unlabelled_all_scored": 112789,
+      "f_amb_pool_12504": 0.017140868354650656,
+      "n_ambiguous_pool_12504": 197,
+      "n_unlabelled_pool_12504": 11493
+    }
+  ]
+}

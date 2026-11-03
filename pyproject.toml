@@ -46,6 +46,14 @@ dev = [
     "pytest-cov>=4.1",
     "ruff>=0.1",
 ]
+# The paper's replay study (Curation_Paper/README.md); versions are those it ran with.
+replay = [
+    "scikit-learn>=1.9",
+    "scipy>=1.17",
+    "aeon==1.6.0",
+    "pypdf>=6",
+    "pytest>=7.4",
+]
 
 [project.scripts]
 signal-curator = "signal_curator.cli:main"

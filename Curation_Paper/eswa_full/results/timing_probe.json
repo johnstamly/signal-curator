@@ -1,0 +1,529 @@
+{
+  "fold": 0,
+  "seed": 0,
+  "n_train_rows": 600,
+  "n_es": 129,
+  "len_train_pool": 732,
+  "n_test": 150,
+  "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+  },
+  "fits": {
+    "microconv1d": {
+      "arch": "microconv1d",
+      "device": "cuda",
+      "seconds": 25.064781999972183,
+      "wall_seconds": 25.065201799967326,
+      "epochs": 229,
+      "strict_cuda_ok": true,
+      "error": null,
+      "n_params": 2529
+    },
+    "cnn_wide": {
+      "arch": "cnn_wide",
+      "device": "cuda",
+      "seconds": 11.811945800029207,
+      "wall_seconds": 11.812478800013196,
+      "epochs": 78,
+      "strict_cuda_ok": true,
+      "error": null,
+      "n_params": 28273
+    },
+    "resnet1d": {
+      "arch": "resnet1d",
+      "device": "cuda",
+      "seconds": 13.767516099964269,
+      "wall_seconds": 13.768027000012808,
+      "epochs": 68,
+      "strict_cuda_ok": true,
+      "error": null,
+      "n_params": 110241
+    },
+    "bigru": {
+      "arch": "bigru",
+      "device": "cuda",
+      "seconds": 11.988135200052056,
+      "wall_seconds": 11.98858319997089,
+      "epochs": 91,
+      "strict_cuda_ok": true,
+      "error": null,
+      "n_params": 26529
+    },
+    "transformer": {
+      "arch": "transformer",
+      "device": "cuda",
+      "seconds": 19.88955150003312,
+      "wall_seconds": 19.890141000039876,
+      "epochs": 72,
+      "strict_cuda_ok": true,
+      "error": null,
+      "n_params": 39409
+    },
+    "hgb": {
+      "arch": "hgb",
+      "device": "cpu",
+      "seconds": 7.519915500015486,
+      "wall_seconds": 7.520001999975648,
+      "epochs": 100,
+      "strict_cuda_ok": null,
+      "error": null,
+      "n_params": null
+    },
+    "logreg": {
+      "arch": "logreg",
+      "device": "cpu",
+      "seconds": 0.036991800006944686,
+      "wall_seconds": 0.03709909995086491,
+      "epochs": 0,
+      "strict_cuda_ok": null,
+      "error": null,
+      "n_params": null
+    },
+    "minirocket": {
+      "arch": "minirocket",
+      "device": "cpu",
+      "seconds": 1.39509750000434,
+      "wall_seconds": 1.3951836000196636,
+      "epochs": 0,
+      "strict_cuda_ok": null,
+      "error": null,
+      "n_params": null
+    }
+  },
+  "microconv1d_cpu": {
+    "arch": "microconv1d",
+    "device": "cpu",
+    "seconds": 30.34326689998852,
+    "wall_seconds": 30.343719099997543,
+    "epochs": 161,
+    "strict_cuda_ok": null,
+    "error": null,
+    "n_params": 2529
+  },
+  "strict_cuda": {
+    "microconv1d": true,
+    "cnn_wide": true,
+    "resnet1d": true,
+    "bigru": true,
+    "transformer": true
+  },
+  "simulate": {
+    "unc_oracle_al": {
+      "strategy": "unc_oracle",
+      "wall_seconds": 545.956648899999,
+      "fit_seconds_reported": 545.459292100044,
+      "len_train_pool": 732,
+      "fit_units": 11350.0,
+      "n_fits": 41
+    },
+    "random_rand": {
+      "strategy": "random",
+      "wall_seconds": 65.52037490002112,
+      "fit_seconds_reported": 65.18975220003631,
+      "len_train_pool": 732,
+      "fit_units": 2100.0,
+      "n_fits": 6
+    }
+  },
+  "estimate": {
+    "formula": "Stage1 = sum_studies sum_items count * unit_seconds. Simulate unit_seconds = fit_units(config) * (measured simulate wall seconds / fit_units of the measured config), fit_units = sum of training-set sizes over all fits (round fit + 3 OOF fits at 2/3 size for oracle/selftrain strategies). Torch archs in simulate (E5) are scaled by t_fit(arch)/t_fit(microconv1d).",
+    "assumptions": [
+      "fit time ~ linear in training-set size",
+      "5 folds x 5 seeds = 25 cells per config; E1 doubled for the 13-excluded sensitivity run",
+      "E1/E2/E3 overlaps are not de-duplicated (conservative)",
+      "E2 unc_selftrain costs the same as unc_oracle; 'uncertainty' = one fit per round, no OOF",
+      "E4 tuning fits use the 600-row time (full pool ~1.2x larger: slight under-estimate)",
+      "E5 headline uses the 3 slowest non-microconv torch archs (upper bound); lower bound listed",
+      "E6 window-1000 fit costs 2x the default; other ablations 1x",
+      "E7 uses unc_oracle, budgets <= 400; seed sizes above 100 start at that size",
+      "E10 fit uses ~1.7x the rows of the 600-row probe; E8/E9/E11 add no fits",
+      "classic models time includes feature extraction as measured by fit()",
+      "probe is a single sample on one fold and seed; epochs vary by seed/arch"
+    ],
+    "per_study_hours": {
+      "E1": 9.402741648611684,
+      "E2": 17.73757835082596,
+      "E3": 25.387117790259374,
+      "E4_tune": 0.45736967700038805,
+      "E4_compare": 2.223324818751886,
+      "E5": 6.904414827696261,
+      "E6": 5.357914492359366,
+      "E7": 16.660296049857717,
+      "E8_E9": 0.0,
+      "E10": 0.0591807352777121,
+      "E11": 0.0
+    },
+    "studies": {
+      "E1": {
+        "items": [
+          {
+            "what": "unc_oracle on L_AL",
+            "count": 50,
+            "unit_seconds": 545.956648899999,
+            "seconds": 27297.83244499995
+          },
+          {
+            "what": "random on L_rand",
+            "count": 50,
+            "unit_seconds": 65.52037490002112,
+            "seconds": 3276.0187450010562
+          },
+          {
+            "what": "random on L_AL",
+            "count": 50,
+            "unit_seconds": 65.52037490002112,
+            "seconds": 3276.0187450010562
+          }
+        ],
+        "hours": 9.402741648611684
+      },
+      "E2": {
+        "items": [
+          {
+            "what": "unc_oracle x 2 eta",
+            "count": 50,
+            "unit_seconds": 545.956648899999,
+            "seconds": 27297.83244499995
+          },
+          {
+            "what": "unc_selftrain x 2 eta",
+            "count": 50,
+            "unit_seconds": 545.956648899999,
+            "seconds": 27297.83244499995
+          },
+          {
+            "what": "uncertainty x 2 eta",
+            "count": 50,
+            "unit_seconds": 185.19234345947103,
+            "seconds": 9259.617172973552
+          }
+        ],
+        "hours": 17.73757835082596
+      },
+      "E3": {
+        "items": [
+          {
+            "what": "unc_oracle x 5 eta",
+            "count": 125,
+            "unit_seconds": 545.956648899999,
+            "seconds": 68244.58111249987
+          },
+          {
+            "what": "uncertainty x 5 eta",
+            "count": 125,
+            "unit_seconds": 185.19234345947103,
+            "seconds": 23149.04293243388
+          }
+        ],
+        "hours": 25.387117790259374
+      },
+      "E4_tune": {
+        "items": [
+          {
+            "what": "microconv1d tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 25.064781999972183,
+            "seconds": 451.1660759994993
+          },
+          {
+            "what": "cnn_wide tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 11.811945800029207,
+            "seconds": 212.61502440052573
+          },
+          {
+            "what": "resnet1d tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 13.767516099964269,
+            "seconds": 247.81528979935683
+          },
+          {
+            "what": "bigru tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 11.988135200052056,
+            "seconds": 215.78643360093702
+          },
+          {
+            "what": "transformer tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 19.88955150003312,
+            "seconds": 358.0119270005962
+          },
+          {
+            "what": "hgb tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 7.519915500015486,
+            "seconds": 135.35847900027875
+          },
+          {
+            "what": "logreg tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 0.036991800006944686,
+            "seconds": 0.6658524001250044
+          },
+          {
+            "what": "minirocket tuning (6 cfg x 3 seeds)",
+            "count": 18,
+            "unit_seconds": 1.39509750000434,
+            "seconds": 25.11175500007812
+          }
+        ],
+        "hours": 0.45736967700038805
+      },
+      "E4_compare": {
+        "items": [
+          {
+            "what": "microconv1d x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 14.621122833317107,
+            "seconds": 2193.168424997566
+          },
+          {
+            "what": "cnn_wide x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 6.890301716683704,
+            "seconds": 1033.5452575025556
+          },
+          {
+            "what": "resnet1d x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 8.03105105831249,
+            "seconds": 1204.6576587468735
+          },
+          {
+            "what": "bigru x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 6.993078866697033,
+            "seconds": 1048.961830004555
+          },
+          {
+            "what": "transformer x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 11.602238375019322,
+            "seconds": 1740.3357562528984
+          },
+          {
+            "what": "hgb x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 4.386617375009034,
+            "seconds": 657.992606251355
+          },
+          {
+            "what": "logreg x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 0.021578550004051067,
+            "seconds": 3.23678250060766
+          },
+          {
+            "what": "minirocket x 6 budgets x 25 cells (x0.583 of 600-row time)",
+            "count": 150,
+            "unit_seconds": 0.8138068750025317,
+            "seconds": 122.07103125037975
+          }
+        ],
+        "hours": 2.223324818751886
+      },
+      "E5": {
+        "items": [
+          {
+            "what": "bigru in unc_oracle loop (upper bound: 3 slowest)",
+            "count": 25,
+            "unit_seconds": 261.12344086566577,
+            "seconds": 6528.086021641644
+          },
+          {
+            "what": "resnet1d in unc_oracle loop (upper bound: 3 slowest)",
+            "count": 25,
+            "unit_seconds": 299.8816009499551,
+            "seconds": 7497.0400237488775
+          },
+          {
+            "what": "transformer in unc_oracle loop (upper bound: 3 slowest)",
+            "count": 25,
+            "unit_seconds": 433.23069337264064,
+            "seconds": 10830.767334316017
+          }
+        ],
+        "hours": 6.904414827696261
+      },
+      "E6": {
+        "items": [
+          {
+            "what": "one-factor fits (relu, cw none, cw full, no aug, win250, no zscore)",
+            "count": 150,
+            "unit_seconds": 25.064781999972183,
+            "seconds": 3759.7172999958275
+          },
+          {
+            "what": "window 1000 fit (x2 input length)",
+            "count": 25,
+            "unit_seconds": 50.12956399994437,
+            "seconds": 1253.2390999986092
+          },
+          {
+            "what": "default control fit",
+            "count": 25,
+            "unit_seconds": 25.064781999972183,
+            "seconds": 626.6195499993046
+          },
+          {
+            "what": "warm-start loop variant",
+            "count": 25,
+            "unit_seconds": 545.956648899999,
+            "seconds": 13648.916222499975
+          }
+        ],
+        "hours": 5.357914492359366
+      },
+      "E7": {
+        "items": [
+          {
+            "what": "unc_oracle seed=50 batch=25 (to 400)",
+            "count": 25,
+            "unit_seconds": 482.22162160550573,
+            "seconds": 12055.540540137643
+          },
+          {
+            "what": "unc_oracle seed=100 batch=25 (to 400)",
+            "count": 25,
+            "unit_seconds": 459.37321559427227,
+            "seconds": 11484.330389856807
+          },
+          {
+            "what": "unc_oracle seed=200 batch=25 (to 400)",
+            "count": 25,
+            "unit_seconds": 370.38468691894207,
+            "seconds": 9259.617172973552
+          },
+          {
+            "what": "unc_oracle seed=50 batch=50 (to 400)",
+            "count": 25,
+            "unit_seconds": 254.9401091779731,
+            "seconds": 6373.5027294493275
+          },
+          {
+            "what": "unc_oracle seed=100 batch=50 (to 400)",
+            "count": 25,
+            "unit_seconds": 242.9146323299555,
+            "seconds": 6072.865808248887
+          },
+          {
+            "what": "unc_oracle seed=200 batch=50 (to 400)",
+            "count": 25,
+            "unit_seconds": 197.21782030748864,
+            "seconds": 4930.445507687216
+          },
+          {
+            "what": "unc_oracle seed=50 batch=100 (to 400)",
+            "count": 25,
+            "unit_seconds": 146.7108175458147,
+            "seconds": 3667.7704386453674
+          },
+          {
+            "what": "unc_oracle seed=100 batch=100 (to 400)",
+            "count": 25,
+            "unit_seconds": 134.6853406977971,
+            "seconds": 3367.1335174449277
+          },
+          {
+            "what": "unc_oracle seed=200 batch=100 (to 400)",
+            "count": 25,
+            "unit_seconds": 110.63438700176191,
+            "seconds": 2765.859675044048
+          }
+        ],
+        "hours": 16.660296049857717
+      },
+      "E8_E9": {
+        "items": [
+          {
+            "what": "reuse E1 predictions / sklearn",
+            "count": 0,
+            "unit_seconds": 0.0,
+            "seconds": 0.0
+          }
+        ],
+        "hours": 0.0
+      },
+      "E10": {
+        "items": [
+          {
+            "what": "microconv1d on all L_AL, seeds 0-4 (x1.7 of 600 rows)",
+            "count": 5,
+            "unit_seconds": 42.61012939995271,
+            "seconds": 213.05064699976356
+          }
+        ],
+        "hours": 0.0591807352777121
+      },
+      "E11": {
+        "items": [
+          {
+            "what": "reuses E10 model (R4)",
+            "count": 0,
+            "unit_seconds": 0.0,
+            "seconds": 0.0
+          }
+        ],
+        "hours": 0.0
+      }
+    },
+    "e5_lower_bound_hours": 5.682574696725687,
+    "stage1_total_hours": 84.18993839064035,
+    "stage1_total_hours_with_e5_lower_bound": 82.96809825966977,
+    "exceeds_24h": true
+  },
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "torch": "2.11.0+cu128",
+  "meta": {
+    "git_sha": "0bb8f925fc1879e302deb4d8681122aa747d873a",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-16T17:19:21+00:00"
+  }
+}

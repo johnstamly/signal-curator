@@ -1,0 +1,4878 @@
+{
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "configs": {
+  "microconv1d": [
+   {
+    "name": "lr=0.001|act=leaky",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 2529
+   },
+   {
+    "name": "lr=0.0003|act=leaky",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 2529
+   },
+   {
+    "name": "lr=0.0001|act=leaky",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 2529
+   },
+   {
+    "name": "lr=0.001|act=relu",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "relu",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 2529
+   },
+   {
+    "name": "lr=0.0003|act=relu",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "relu",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 2529
+   },
+   {
+    "name": "lr=0.0001|act=relu",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "relu",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 2529
+   }
+  ],
+  "cnn_wide": [
+   {
+    "name": "lr=0.001|width=1",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 28273
+   },
+   {
+    "name": "lr=0.0003|width=1",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 28273
+   },
+   {
+    "name": "lr=0.0001|width=1",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 28273
+   },
+   {
+    "name": "lr=0.001|width=1.15",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 1.15
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 36930
+   },
+   {
+    "name": "lr=0.0003|width=1.15",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 1.15
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 36930
+   },
+   {
+    "name": "lr=0.0001|width=1.15",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 1.15
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 36930
+   }
+  ],
+  "resnet1d": [
+   {
+    "name": "lr=0.001|width=1",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 110241
+   },
+   {
+    "name": "lr=0.0003|width=1",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 110241
+   },
+   {
+    "name": "lr=0.0001|width=1",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 110241
+   },
+   {
+    "name": "lr=0.001|width=0.85",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 0.85
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 79580
+   },
+   {
+    "name": "lr=0.0003|width=0.85",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 0.85
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 79580
+   },
+   {
+    "name": "lr=0.0001|width=0.85",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 0.85
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 79580
+   }
+  ],
+  "bigru": [
+   {
+    "name": "lr=0.001|width=1",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 26529
+   },
+   {
+    "name": "lr=0.0003|width=1",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 26529
+   },
+   {
+    "name": "lr=0.0001|width=1",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 26529
+   },
+   {
+    "name": "lr=0.001|width=0.7",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 0.7
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 13287
+   },
+   {
+    "name": "lr=0.0003|width=0.7",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 0.7
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 13287
+   },
+   {
+    "name": "lr=0.0001|width=0.7",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 0.7
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 13287
+   }
+  ],
+  "transformer": [
+   {
+    "name": "lr=0.001|width=1",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 39409
+   },
+   {
+    "name": "lr=0.0003|width=1",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 39409
+   },
+   {
+    "name": "lr=0.0001|width=1",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": 39409
+   },
+   {
+    "name": "lr=0.001|width=1.3",
+    "recipe": {
+     "lr": 0.001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 1.3
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 61177
+   },
+   {
+    "name": "lr=0.0003|width=1.3",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 1.3
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 61177
+   },
+   {
+    "name": "lr=0.0001|width=1.3",
+    "recipe": {
+     "lr": 0.0001,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "width": 1.3
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": 61177
+   }
+  ],
+  "hgb": [
+   {
+    "name": "learning_rate=0.05|max_leaf_nodes=15",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "learning_rate=0.05|max_leaf_nodes=31",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "learning_rate": 0.05
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "learning_rate=0.05|max_leaf_nodes=63",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 63
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "learning_rate=0.1|max_leaf_nodes=15",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "max_leaf_nodes": 15
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "learning_rate=0.1|max_leaf_nodes=31",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "learning_rate=0.1|max_leaf_nodes=63",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "max_leaf_nodes": 63
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   }
+  ],
+  "logreg": [
+   {
+    "name": "C=0.01",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "C": 0.01
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "C=0.1",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "C": 0.1
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "C=1",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "C=10",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "C": 10.0
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   },
+   {
+    "name": "C=100",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {
+      "C": 100.0
+     },
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   }
+  ],
+  "minirocket": [
+   {
+    "name": "kernels=2500",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 2500
+    },
+    "n_params": null
+   },
+   {
+    "name": "kernels=5000",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 5000
+    },
+    "n_params": null
+   },
+   {
+    "name": "kernels=10000",
+    "recipe": {
+     "lr": 0.0003,
+     "weight_decay": 0.001,
+     "batch_size": 64,
+     "max_epochs": 300,
+     "patience": 60,
+     "grad_clip": 1.0,
+     "activation": "leaky",
+     "class_weight": "sqrt",
+     "augment": true,
+     "zscore": true,
+     "window": null,
+     "model_cfg": {},
+     "minirocket_kernels": 10000
+    },
+    "n_params": null
+   }
+  ]
+ },
+ "specs": [
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "microconv1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "relu",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "cnn_wide",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "resnet1d",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.85
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "bigru",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 0.7
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "transformer",
+   "recipe": {
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "width": 1.3
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05,
+     "max_leaf_nodes": 15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05,
+     "max_leaf_nodes": 15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05,
+     "max_leaf_nodes": 15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05,
+     "max_leaf_nodes": 63
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05,
+     "max_leaf_nodes": 63
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "learning_rate": 0.05,
+     "max_leaf_nodes": 63
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "max_leaf_nodes": 15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "max_leaf_nodes": 15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "max_leaf_nodes": 15
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "max_leaf_nodes": 63
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "max_leaf_nodes": 63
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "hgb",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "max_leaf_nodes": 63
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 0.01
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 0.01
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 0.01
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 0.1
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 0.1
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 0.1
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 10.0
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 10.0
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 10.0
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 100.0
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 100.0
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "logreg",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {
+     "C": 100.0
+    },
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 2500
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 2500
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 2500
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 5000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 5000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 5000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 0,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 1,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  },
+  {
+   "study_source": "tune",
+   "pool": "al",
+   "fold": 0,
+   "seed": 2,
+   "strategy": "tune",
+   "eta": 0.0,
+   "arch": "minirocket",
+   "recipe": {
+    "lr": 0.0003,
+    "weight_decay": 0.001,
+    "batch_size": 64,
+    "max_epochs": 300,
+    "patience": 60,
+    "grad_clip": 1.0,
+    "activation": "leaky",
+    "class_weight": "sqrt",
+    "augment": true,
+    "zscore": true,
+    "window": null,
+    "model_cfg": {},
+    "minirocket_kernels": 10000
+   },
+   "budgets": [
+    600
+   ],
+   "seed_size": 0,
+   "batch": 0
+  }
+ ],
+ "counts": {
+  "total": 132,
+  "microconv1d": 18,
+  "cnn_wide": 18,
+  "resnet1d": 18,
+  "bigru": 18,
+  "transformer": 18,
+  "hgb": 18,
+  "logreg": 15,
+  "minirocket": 9
+ }
+}

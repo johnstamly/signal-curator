@@ -1,0 +1,16 @@
+{
+ "snapshot": "eta0_manifest_key193b514.json",
+ "n_old": 588,
+ "n_identical": 588,
+ "n_different": 0,
+ "n_missing": 0,
+ "different": [],
+ "missing": [],
+ "old_code_keys": [
+  "193b514622b73adb46a01efca1c9c21649cf2174d4088e3c82a83564391c0df7"
+ ],
+ "current_code_keys": [
+  "84a02678827a691b4a013a1c2f3cda42be00c35e994017ae908b5f12f943d5b5"
+ ],
+ "fingerprint": "sha256 of the cell result block with timing fields removed"
+}

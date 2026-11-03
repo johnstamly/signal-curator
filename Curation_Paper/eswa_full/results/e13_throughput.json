@@ -1,0 +1,268 @@
+{
+  "rule": {
+    "break_threshold_s": 300,
+    "break_rule": "gap > 300 s between consecutive labels of the same day is a break and is excluded; a gap of exactly 300 s is kept",
+    "gap_definition": "difference of consecutive sorted labeled_at stamps within one calendar day (first 10 characters of the stamp); gaps never span midnight; identical stamps give a 0 s gap that is kept",
+    "active_time_s": "sum of the kept gaps (the first label of a day starts the clock)",
+    "quantiles": "numpy percentile, linear interpolation; IQR = q75 - q25",
+    "overall_median": "median of all kept gaps of the pool, pooled over days",
+    "l_rand_seed_exclusion": "L_rand rows that are seed rows (L_AL IDs stamped by L_rand on its first day, the E14 seed definition, lib/live_record.seed_and_added) carry stamps copied from L_AL when the random pool was created, not labelling events of the random session; they are excluded from L_rand throughput. L_AL uses all rows."
+  },
+  "pools": {
+    "L_AL": {
+      "overall": {
+        "n_labels": 1011,
+        "n_days": 5,
+        "n_kept_gaps": 990,
+        "n_breaks": 16,
+        "active_s": 9306.0,
+        "median_s": 3.0,
+        "q25_s": 2.0,
+        "q75_s": 7.0,
+        "iqr_s": 5.0
+      },
+      "per_day": {
+        "2026-05-01": {
+          "n_labels": 732,
+          "n_gaps": 731,
+          "n_breaks": 3,
+          "n_kept_gaps": 728,
+          "n_zero_gaps": 0,
+          "active_s": 3712.0,
+          "median_s": 2.0,
+          "q25_s": 2.0,
+          "q75_s": 4.0,
+          "iqr_s": 2.0
+        },
+        "2026-05-02": {
+          "n_labels": 86,
+          "n_gaps": 85,
+          "n_breaks": 4,
+          "n_kept_gaps": 81,
+          "n_zero_gaps": 0,
+          "active_s": 1309.0,
+          "median_s": 8.0,
+          "q25_s": 4.0,
+          "q75_s": 18.0,
+          "iqr_s": 14.0
+        },
+        "2026-05-04": {
+          "n_labels": 81,
+          "n_gaps": 80,
+          "n_breaks": 2,
+          "n_kept_gaps": 78,
+          "n_zero_gaps": 0,
+          "active_s": 1301.0,
+          "median_s": 5.5,
+          "q25_s": 3.0,
+          "q75_s": 11.0,
+          "iqr_s": 8.0
+        },
+        "2026-05-05": {
+          "n_labels": 96,
+          "n_gaps": 95,
+          "n_breaks": 5,
+          "n_kept_gaps": 90,
+          "n_zero_gaps": 0,
+          "active_s": 2640.0,
+          "median_s": 14.0,
+          "q25_s": 8.25,
+          "q75_s": 34.5,
+          "iqr_s": 26.25
+        },
+        "2026-05-07": {
+          "n_labels": 16,
+          "n_gaps": 15,
+          "n_breaks": 2,
+          "n_kept_gaps": 13,
+          "n_zero_gaps": 0,
+          "active_s": 344.0,
+          "median_s": 12.0,
+          "q25_s": 8.0,
+          "q75_s": 20.0,
+          "iqr_s": 12.0
+        }
+      },
+      "n_rows_in_pool": 1011,
+      "n_used": 1011,
+      "n_excluded_seed_rows": 0
+    },
+    "L_rand": {
+      "overall": {
+        "n_labels": 268,
+        "n_days": 1,
+        "n_kept_gaps": 267,
+        "n_breaks": 0,
+        "active_s": 1160.0,
+        "median_s": 2.0,
+        "q25_s": 2.0,
+        "q75_s": 4.0,
+        "iqr_s": 2.0
+      },
+      "per_day": {
+        "2026-05-07": {
+          "n_labels": 268,
+          "n_gaps": 267,
+          "n_breaks": 0,
+          "n_kept_gaps": 267,
+          "n_zero_gaps": 0,
+          "active_s": 1160.0,
+          "median_s": 2.0,
+          "q25_s": 2.0,
+          "q75_s": 4.0,
+          "iqr_s": 2.0
+        }
+      },
+      "n_rows_in_pool": 1011,
+      "n_used": 268,
+      "n_excluded_seed_rows": 743,
+      "seed_definition": "seed = L_AL IDs that L_rand stamped on its first day (2026-05-01); added = remaining L_AL IDs"
+    }
+  },
+  "screenshots": {
+    "method": "headless Edge 155 driven over the DevTools protocol; Emulation.setDeviceMetricsOverride; Page.captureScreenshot (viewport capture, no stitching; ui_labelling.png is a clip of the viewport)",
+    "viewport_css_px": [
+      1400,
+      900
+    ],
+    "device_scale_factor": 3.125,
+    "png_size_px": {
+      "default": [
+        4375,
+        2813
+      ],
+      "ui_labelling.png": [
+        4375,
+        1203
+      ]
+    },
+    "crops": {
+      "ui_labelling.png": {
+        "box_px": [
+          0,
+          110,
+          4375,
+          1313
+        ],
+        "of_capture_px": [
+          4375,
+          1313
+        ],
+        "why": "top edge cropped to the next clean element boundary (a sliver of the previous card showed); PIL crop, no recapture"
+      }
+    },
+    "dpi_equivalent": "300 (96 CSS dpi x 3.125)",
+    "anonymity": {
+      "note": "HDF5 path field display masked for anonymity (DOM only, no rerun)",
+      "method": "just before each capture the value property of the sidebar 'HDF5 path' input was assigned the string dataset.h5; no input or change event was dispatched, so Streamlit did not rerun; the app was reading the real HDF5 file throughout",
+      "page_scan": "before each capture the page text, all input and textarea values and the title, aria-label and alt attributes were scanned for identifying strings (author name, drive-letter paths, user-profile paths, project folder name); after masking the scan found nothing in any of the six captures",
+      "masked_items": [
+        "the HDF5 path field (displayed value only)"
+      ]
+    },
+    "app": "app/app.py (Streamlit), run from a scratch copy of app/*.py so that DB_PATH resolved to the scratch DB copy; src/ and dataset.h5 read in place, read-only",
+    "db_copy": {
+      "made_with": "sqlite3 backup API from a mode=ro connection to the frozen shared_labels.db (L_AL pool)",
+      "rows_source": 1011,
+      "rows_copy": 1011,
+      "good": 875,
+      "bad": 136,
+      "frequency_khz": 50,
+      "rows_after_capture": 1011,
+      "copy_sha256_before_and_after_second_session": "59f1665f94bd68cff5fcf82cc0dc5e9e5ebc14ce453334800f89ad57037d3450",
+      "note": "no label button, relabel button or export button was clicked; the copy's row count, class counts and file hash were identical before and after the recapture session"
+    },
+    "model_state": "the scratch copy held weights from the first capture session (model restored on load); 'Train & Filter Dataset' was clicked once more in the copy for the recapture (default config: 150 max epochs, patience 30; early stopped at epoch 38; val acc 92.6 %, accuracy on the 1,011 labelled signals 92.1 %: TP 872, TN 59, FP 77, FN 3); weights were written under the scratch root only. The first-session training run (val acc 94.1 %, FP 23, FN 16) is superseded by this one, so every panel shows this run",
+    "panels": {
+      "labelling": {
+        "file": "ui_labelling.png",
+        "app_state": "after the in-copy training run; clip of the main-area labelling view (signal with uncertainty tag, GOOD / BAD / Skip) beside the sidebar controls",
+        "shows": "labelling view: one queued signal from the uncertainty queue (P = 0.50), GOOD / BAD / Skip buttons, signal-window and training controls",
+        "sha256": "1cc2777dcb43d8483b3ecd0d1176eb88f2eedd9ad45f2cf5a6e9800a2d3a1f85"
+      },
+      "validation": {
+        "file": "ui_validation.png",
+        "app_state": "after the in-copy training run",
+        "shows": "validation dashboard: training banner, prediction-distribution histogram by true label, confusion counts (TP 872, TN 59, FP 77, FN 3), start of the examples grid; sidebar labelling progress 1011 / 875 / 136",
+        "sha256": "23b424e053028ff5a0be1f1d9417717b602f9770f5d28867d86d98e2acc6a4b0"
+      },
+      "gallery": {
+        "file": "ui_gallery.png",
+        "app_state": "after the in-copy training run",
+        "shows": "closest panel to a gallery: the Classifier Examples grid (5 most confident GOOD, 5 most confident BAD, 5 most uncertain labelled signals) and the loss curves; the app has no panel named gallery",
+        "substitute": true,
+        "sha256": "540b58ae6fd98b8853dab60be731e0cc73eddec0e58dc75eb8ac7d2def4411a4"
+      },
+      "fpfn": {
+        "file": "ui_fpfn.png",
+        "app_state": "after the in-copy training run",
+        "shows": "Review Misclassified Signals: False Positives (77 labelled BAD, model says GOOD) with probability, signal identity and a Relabel GOOD button; relabel was not clicked",
+        "sha256": "cab147c0f89688cba0e2f0d42b45ff7417d9ab84c4a8ff1195dc7af87e2df8de"
+      },
+      "fpfn_fn": {
+        "file": "ui_fpfn_fn.png",
+        "app_state": "after the in-copy training run",
+        "shows": "the False Negatives list of the same panel (3 labelled GOOD, model says BAD) with Relabel BAD buttons, followed by the labelling view",
+        "sha256": "94cbbf042e3d45fad5474a032ab5976ecb3b1944c85194a43a645c7d004c7f57"
+      },
+      "export": {
+        "file": "ui_export.png",
+        "app_state": "after the in-copy training run; Export Labeled Dataset NOT clicked",
+        "shows": "sidebar scrolled to the bottom: model status, queue counters, Train button, Recent Labels and the Export Labeled Dataset button (the export panel is only this button in the app)",
+        "substitute": true,
+        "sha256": "0edec68c936617b9882d93d7a82bee641e748b0884f546e79f185aa983855c0d"
+      }
+    }
+  },
+  "code": {
+    "git_sha": "14655ae7440158dd720bcc9e52d05662a1098154",
+    "files": [
+      "Curation_Paper/eswa_full/lib/throughput.py",
+      "Curation_Paper/eswa_full/scripts/e13_throughput.py",
+      "Curation_Paper/eswa_full/tests/test_throughput.py",
+      "Curation_Paper/eswa_full/tests/mutation_throughput.py",
+      "Curation_Paper/eswa_full/lib/live_record.py",
+      "Curation_Paper/eswa_full/figures/ui_capture_manifest.json"
+    ],
+    "dirty_files": []
+  },
+  "meta": {
+    "git_sha": "14655ae7440158dd720bcc9e52d05662a1098154",
+    "input_hashes": {
+      "al": "aaa3547f8c60969405ebc6437e9583e2189f14b1fbd2cb39a95ae796ecfd36b1",
+      "rand": "90ca86bcb09d9a296cfbde628938f3daaa2d5355f33018c47775c5899d76da3f"
+    },
+    "seeds": {
+      "stage1": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "stage2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "created": "2026-10-16T22:28:05+00:00"
+  }
+}
